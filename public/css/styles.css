@@ -1938,8 +1938,8 @@ a:hover, a:focus {
   margin-right: auto;
 }
 .header .header-top {
-  padding-top: 57px;
-  padding-bottom: 57px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .header .header-top .header-content {
   max-width: 1620px;
@@ -6077,6 +6077,71 @@ input[type=checkbox]::before {
   padding: 0;
 }
 .form-contact-us.bg-color-secondary .flat-alert {
+  color: var(--white);
+}
+
+/* Alert Message Styles */
+.flat-alert {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flat-alert.msg-success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.flat-alert.msg-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.flat-alert .close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.flat-alert .close:hover {
+  opacity: 1;
+}
+
+.flat-alert .close i {
+  font-size: 16px;
+}
+
+.form-contact-us.bg-color-secondary .flat-alert.msg-success {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-color: rgba(76, 175, 80, 0.5);
+  color: var(--white);
+}
+
+.form-contact-us.bg-color-secondary .flat-alert.msg-error {
+  background-color: rgba(199, 41, 41, 0.2);
+  border-color: rgba(199, 41, 41, 0.5);
   color: var(--white);
 }
 .form-contact-us.bg-color-secondary textarea,

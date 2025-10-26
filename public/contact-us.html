@@ -79,7 +79,9 @@
       <header class="header style-2 bg-color-secdonary header-sticky">
         <div class="header-content">
           <div class="logo logo-header">
-            <a href="/" class="brand-text-logo">Al Tameez Al Thaqib</a>
+            <a href="/" class="brand-text-logo">
+              <img src="images/logo.png" alt="logo" />
+            </a>
           </div>
           <nav class="main-menu">
             <ul class="menu-primary-menu">
@@ -297,7 +299,9 @@
         <div class="header-top">
           <div class="header-content">
             <div class="logo logo-header">
-              <a href="/" class="brand-text-logo">Al Tameez</a>
+              <a href="/" class="brand-text-logo">
+                <img src="images/logo.png" alt="logo" />
+              </a>
             </div>
             <div class="header-right">
               <div class="tf-socials">
@@ -374,7 +378,9 @@
         <div class="header-bottom">
           <div class="header-content">
             <div class="logo logo-header logo-mobile">
-              <a href="/" class="brand-text-logo">Al Tameez</a>
+              <a href="/" class="brand-text-logo">
+                <img src="images/logo.png" alt="logo" />
+              </a>
             </div>
             <nav class="main-menu">
               <ul class="menu-primary-menu">
@@ -710,40 +716,54 @@
                         name="name"
                         id="name"
                         placeholder="*Full name"
+                        required
                       />
                     </fieldset>
                     <fieldset class="item">
                       <input
                         type="email"
-                        name="mail"
-                        id="mail"
+                        name="email"
+                        id="email"
                         placeholder="*Email address"
+                        required
                       />
                     </fieldset>
                   </div>
                   <div class="cols">
                     <fieldset class="item">
                       <input
-                        type="number"
+                        type="tel"
                         name="phone"
                         id="phone"
-                        placeholder="*Phone number"
+                        placeholder="Phone number"
                       />
                     </fieldset>
                     <fieldset class="item">
-                      <div class="nice-select">
-                        <span class="current caption-1"
-                          >Subject wants to support</span
-                        >
-                        <ul class="list">
-                          <li class="option option-all">Equipments Rental</li>
-                          <li class="option">Materials Supply</li>
-                          <li class="option">Transportation</li>
-                          <li class="option">Manpower Supply</li>
-                          <li class="option">Porta Cabins</li>
-                          <li class="option">Civil Works</li>
-                        </ul>
-                      </div>
+                      <select
+                        name="subject"
+                        id="subject"
+                        class="select-subject"
+                        style="
+                          width: 100%;
+                          padding: 15px;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 4px;
+                          font-size: 14px;
+                        "
+                      >
+                        <option value="">Select Subject</option>
+                        <option value="Equipments Rental">
+                          Equipments Rental
+                        </option>
+                        <option value="Materials Supply">
+                          Materials Supply
+                        </option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Manpower Supply">Manpower Supply</option>
+                        <option value="Porta Cabins">Porta Cabins</option>
+                        <option value="Civil Works">Civil Works</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                      </select>
                     </fieldset>
                   </div>
                   <fieldset>
@@ -751,13 +771,19 @@
                       name="message"
                       id="message"
                       placeholder="Write message..."
+                      required
                     ></textarea>
                   </fieldset>
                   <div
                     class="flex justify-content-between align-items-center flex-wrap gap-20"
                   >
                     <fieldset class="check-box">
-                      <input type="checkbox" name="save" id="save" checked="" />
+                      <input
+                        type="checkbox"
+                        name="accept_terms"
+                        id="save"
+                        required
+                      />
                       <label for="save"
                         >Accept terms and conditions from Al Tameez.
                       </label>
@@ -1028,8 +1054,8 @@
                 <div class="footer-middle">
                   <div class="left logo-footer">
                     <a href="index" class="logo">
-                      <!-- <img src="images/logo.svg" alt="" /> -->
-                      <h4>Al Tameez</h4>
+                      <img src="images/logo.png" alt="" />
+                      <!-- <h4>Al Tameez</h4> -->
                     </a>
                     <div class="post-social bg-color-bg-1">
                       <ul>
@@ -1132,10 +1158,10 @@
         <div class="inner-mobile-nav">
           <div class="top-header-mobi">
             <div class="logo-mobile">
-              <!-- <a href="index.html">
-                            <img src="images/logo-2.svg" alt="">
-                        </a> -->
-              <h4>Al Tameez</h4>
+              <a href="index.html">
+                <img src="images/logo.png" alt="" />
+              </a>
+              <!-- <h4>Al Tameez</h4> -->
             </div>
             <button
               class="mobile-nav-close"
