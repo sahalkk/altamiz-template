@@ -812,6 +812,68 @@
     }, 400);
   };
 
+  var categoryMenuToggle = function () {
+    var categoryMenuClicked = false;
+
+    // Handle click on category items with submenus (mobile-friendly)
+    $(document).on(
+      "click",
+      ".categories-siderbar .cat-item-has-children > .cat-link",
+      function (e) {
+        categoryMenuClicked = true;
+        e.preventDefault();
+        e.stopPropagation();
+
+        var $catItem = $(this).closest(".cat-item-has-children");
+        var isOpen = $catItem.hasClass("cat-menu-open");
+
+        // Toggle the menu
+        if (isOpen) {
+          // Close it
+          $catItem.removeClass("cat-menu-open");
+        } else {
+          // Close other menus
+          $(".cat-item-has-children").removeClass("cat-menu-open");
+          // Open this one
+          $catItem.addClass("cat-menu-open");
+        }
+
+        // Reset flag after a short delay
+        setTimeout(function () {
+          categoryMenuClicked = false;
+        }, 100);
+
+        return false;
+      }
+    );
+
+    // Prevent submenu link clicks from triggering parent click
+    $(document).on(
+      "click",
+      ".categories-siderbar .cat-sub-menu a",
+      function (e) {
+        e.stopPropagation();
+        // Allow normal link navigation
+      }
+    );
+
+    // Close menu when clicking outside (but not when clicking the menu item itself)
+    $(document).on("click", function (e) {
+      if (categoryMenuClicked) {
+        return;
+      }
+
+      var $target = $(e.target);
+      if (
+        !$target.closest(".categories-siderbar").length ||
+        ($target.closest(".categories-siderbar").length &&
+          !$target.closest(".cat-item-has-children").length)
+      ) {
+        $(".cat-item-has-children").removeClass("cat-menu-open");
+      }
+    });
+  };
+
   // Dom Ready
   $(function () {
     headerSticky();
@@ -837,5 +899,6 @@
     parallaxImage();
     gotop();
     preloader();
+    categoryMenuToggle();
   });
 })(jQuery);
