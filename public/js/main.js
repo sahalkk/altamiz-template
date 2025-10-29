@@ -812,34 +812,6 @@
     }, 400);
   };
 
-  var menuToggle = function () {
-    $(document).on(
-      "click",
-      ".menu-item-has-children > .item-link",
-      function (e) {
-        e.preventDefault();
-        var $menuItem = $(this).parent(".menu-item");
-        var $siblings = $menuItem.siblings(".menu-item");
-
-        // Close other open menus
-        $siblings.removeClass("menu-open");
-
-        // Toggle current menu
-        $menuItem.toggleClass("menu-open");
-
-        // Close menu when clicking outside (but allow clicks inside submenu)
-        setTimeout(function () {
-          $(document).on("click.menu", function (e) {
-            if (!$(e.target).closest(".menu-item-has-children").length) {
-              $(".menu-item").removeClass("menu-open");
-              $(document).off("click.menu");
-            }
-          });
-        }, 10);
-      }
-    );
-  };
-
   // Dom Ready
   $(function () {
     headerSticky();
@@ -865,6 +837,5 @@
     parallaxImage();
     gotop();
     preloader();
-    menuToggle();
   });
 })(jQuery);
