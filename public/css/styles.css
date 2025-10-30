@@ -7898,6 +7898,20 @@ tf-swiper .sw-pagination .swiper-pagination-bullet.swiper-pagination-bullet-acti
   color: var(--white);
   padding-left: 56px;
 }
+.categories-siderbar ul li a.active,
+.categories-siderbar ul li.cat-item > a.active,
+.categories-siderbar ul li.cat-item-has-children > a.active,
+.categories-siderbar ul li.cat-item-has-children > a.cat-link.active {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+  padding-left: 56px !important;
+  border-bottom: none;
+}
+.categories-siderbar ul li a.active::before,
+.categories-siderbar ul li a.active::after {
+  opacity: 1;
+  visibility: visible;
+}
 .categories-siderbar ul li a:hover::before {
   opacity: 1;
   visibility: visible;
@@ -8038,6 +8052,14 @@ tf-swiper .sw-pagination .swiper-pagination-bullet.swiper-pagination-bullet-acti
   background-color: rgba(37, 150, 190, 0.1);
   color: var(--primary);
   padding-left: 58px;
+}
+.categories-siderbar .cat-sub-menu .cat-sub-item a.active {
+  background-color: rgba(37, 150, 190, 0.1) !important;
+  color: var(--primary) !important;
+  padding-left: 58px !important;
+}
+.categories-siderbar .cat-sub-menu .cat-sub-item a.active::before {
+  opacity: 1;
 }
 
 .categories-siderbar .cat-sub-menu .cat-sub-item a:hover::before {
