@@ -9,31 +9,32 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8" />
     <!-- [if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif] -->
-    <title>Graviton - Construction HTML Template</title>
+    <title>Company Overview - Al Tameez Al Thaqib Contracting Company</title>
     <meta
       name="description"
-      content="Graviton - Construction HTML Template is a modern, responsive, and SEO-friendly theme for construction, engineering, and industrial businesses, featuring fast performance and a professional design."
+      content="Al Tameez Al Thaqib is a Saudi-based contractor providing civil works, heavy equipment rentals, industrial services, transportation, manpower and material supply with a focus on safety, quality and on-time delivery."
     />
     <meta
       name="keywords"
-      content="Construction HTML Template, Construction Website Template, Contractor & Builder Template, Engineering & Architecture Theme, Industrial & Factory Website, Best Construction Company Website, Responsive Contractor Theme, SEO-optimized Building Template, Bootstrap Construction HTML, Modern Construction HTML Template with Bootstrap, Fast & SEO-friendly Builder Website Theme, Industrial & Engineering Website Design."
+      content="Al Tameez Al Thaqib, construction Saudi Arabia, civil works, heavy equipment rental, industrial services, manpower supply, transportation, material supply, contracting company KSA"
     />
-    <meta name="author" content="themesflat.com" />
+    <meta name="author" content="Al Tameez Al Thaqib Contracting Company" />
 
     <!-- Mobile Specific Metas -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+    <base href="/" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <!-- Magnific-popup -->
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
-    <!-- Nice-select -->
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <!-- Map -->
-    <link rel="stylesheet" href="css/map.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="css/odometer-theme-default.css" />
     <!-- Swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
@@ -46,28 +47,9 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="images/favicon.png" />
-
-    <style>
-      /* Temporary brand text styling; move to css if needed */
-      .brand-text-logo {
-        font-family: inherit;
-        font-weight: 800;
-        font-size: 28px;
-        letter-spacing: 0.4px;
-        color: #eeeeee;
-        display: inline-block;
-        line-height: 1;
-        text-decoration: none;
-      }
-      @media (min-width: 1200px) {
-        .brand-text-logo {
-          font-size: 32px;
-        }
-      }
-    </style>
   </head>
 
-  <body>
+  <body class="counter-scroll">
     <!-- Preload -->
     <div class="preload preload-container">
       <div class="middle"></div>
@@ -75,7 +57,6 @@
     <!-- /.preload -->
 
     <div class="wrapper">
-      <!-- header -->
       <header class="header style-2 bg-color-secdonary header-sticky">
         <div class="header-content">
           <div class="logo logo-header">
@@ -85,7 +66,7 @@
           </div>
           <nav class="main-menu">
             <ul class="menu-primary-menu">
-              <li class="menu-item current-menu-item">
+              <li class="menu-item">
                 <a href="/" class="item-link">Home</a>
                 <div class="sub-menu-home">
                   <!-- <ul>
@@ -202,7 +183,9 @@
                                 </ul> -->
                 </div>
               </li>
-              <li class="menu-item menu-item-has-children position-relative">
+              <li
+                class="menu-item current-menu-item menu-item-has-children position-relative"
+              >
                 <a href="javascript:void(0)" class="item-link">About Us</a>
                 <ul class="sub-menu">
                   <!-- <li class="sub-menu-item menu-item-has-children-2">
@@ -221,7 +204,7 @@
                                     </ul>
                                 </li> -->
                   <li class="sub-menu-item">
-                    <a href="/about-us/overview.html" class="item-link-2"
+                    <a href="javascript:void(0)" class="item-link-2 active"
                       >Overview</a
                     >
                   </li>
@@ -336,8 +319,8 @@
                                 <li class="sub-menu-item"><a href="blog-details.html" class="item-link-2">Blog Details</a></li>
                             </ul>
                         </li> -->
-              <li class="menu-item current-menu-item">
-                <a href="javascript:void(0)" class="item-link">Contact</a>
+              <li class="menu-item">
+                <a href="contact-us.html" class="item-link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -573,11 +556,15 @@
                                     </ul>
                                 </div> -->
                 </li>
-                <li class="menu-item menu-item-has-children position-relative">
+                <li
+                  class="menu-item current-menu-item menu-item-has-children position-relative"
+                >
                   <a href="javascript:void(0)" class="item-link">About Us </a>
                   <ul class="sub-menu">
                     <li class="sub-menu-item">
-                      <a href="/about-us/overview.html" class="item-link-2"
+                      <a
+                        href="/about-us/overview.html"
+                        class="item-link-2 active"
                         >Overview</a
                       >
                     </li>
@@ -703,8 +690,8 @@
                                     <li class="sub-menu-item"><a href="blog-details.html" class="item-link-2">Blog Details</a></li>
                                 </ul>
                             </li> -->
-                <li class="menu-item current-menu-item">
-                  <a href="javascript:void(0)" class="item-link">Contact</a>
+                <li class="menu-item">
+                  <a href="contact-us.html" class="item-link">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -738,23 +725,30 @@
         <div class="page-title-inner">
           <div class="left">
             <div class="page-content">
-              <div class="subtext text-uppercase">We support you 24/7</div>
-              <h2 class="title">Contact Us</h2>
+              <div class="subtext text-uppercase">
+                Committed to safety, quality and delivery
+              </div>
+              <h2 class="title">Al Tameez Al Thaqib Contracting Company</h2>
               <div class="text">
-                At Al Tameez Engineering & Construction, we're committed to
-                delivering
-                <br />excellence in every project. Contact us today to discuss
-                your construction needs and let us bring your vision to life.
+                We are a Saudi-based engineering and contracting company
+                providing end‑to‑end solutions across civil works, heavy
+                equipment rentals & industrial services, transportation,
+                manpower and material supply.
+                <br />Our teams deliver reliable results for public and private
+                sector projects throughout the Kingdom.
               </div>
               <div class="breadcrumb">
                 <a href="index.html" class="text-uppercase">Home</a>
-                <span class="text-uppercase">contact us</span>
+                <a href="/about-us/overview.html" class="text-uppercase"
+                  >about us</a
+                >
+                <span class="text-uppercase">overview</span>
               </div>
             </div>
             <div class="image-item item-1">
               <img
                 src="images/page-title-item-1.png"
-                data-src="images/page-title-item-1.png"
+                data-src="image/page-title/page-title-item-1.png"
                 alt=""
                 class="ls-is-cached lazyloaded"
               />
@@ -763,8 +757,8 @@
           <div class="right">
             <div class="image">
               <img
-                src="images/page-title-4.jpg"
-                data-src="images/page-title-4.jpg"
+                src="images/page-title-2.jpg"
+                data-src="image/page-title/page-title-2.jpg"
                 alt=""
               />
             </div>
@@ -773,352 +767,741 @@
       </div>
 
       <div class="main-content">
-        <section class="section-map tf-spacing-25">
-          <div class="tf-container w-1806">
-            <div class="wg-map style-black">
-              <div class="box-map">
-                <div id="map1" class="map map-2"></div>
+        <section class="section-list-populated h-1 mt-50">
+          <div class="tf-container w-1810">
+            <div class="row">
+              <div class="col-12">
+                <div class="list-populated bg-color-secondary">
+                  <div
+                    class="swiper tf-swiper"
+                    data-swiper='{
+                                    "slidesPerView": 1,
+                                    "pagination": {
+                                        "el": ".sw-pagination-populated",
+                                        "clickable": true
+                                    },
+                                    "breakpoints": {
+                                        "575": {
+                                            "slidesPerView": 2,
+                                            "spaceBetween": 30
+                                        },
+                                        "1150": {
+                                            "slidesPerView": 3,
+                                            "spaceBetween": 80
+                                        }
+                                    }
+                                }'
+                  >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="populated-item">
+                          <div class="text body-3 wow fadeInUp">
+                            We have grown to be a leader in our field because we
+                            build and nurture strong client relationships, we
+                            rise to any challenge and we value innovation and
+                            resourcefulness.
+                          </div>
+                          <p class="wow fadeInUp">OUR VISION</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="populated-item">
+                          <div
+                            class="text body-3 wow fadeInUp"
+                            data-wow-delay=".2s"
+                          >
+                            Al Tameez Al Thaqib Contracting Company aims to
+                            provide professional service to its client’s
+                            satisfaction by providing service excellence,
+                            honoring deadlines, and be a partner you can rely
+                            on.
+                          </div>
+                          <p class="wow fadeInUp" data-wow-delay=".2s">
+                            OUR MISSION
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="populated-item">
+                          <div
+                            class="text body-3 wow fadeInUp"
+                            data-wow-delay=".1s"
+                          >
+                            We are committed to delivering a superior quality
+                            product/service in the shortest possible time frame
+                            maximizing value for our clients.
+                          </div>
+                          <p class="wow fadeInUp" data-wow-delay=".1s">
+                            OUR GOAL
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="sw-pagination-populated sw-pagination d-xl-none mt-20"
+                    ></div>
+                  </div>
+                  <!-- <div class="img-item tf-animate-4">
+                                    <img src="images/item-list-populated-pabout.png" alt="">
+                                </div> -->
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="bottom-section flex justify-content-between align-items-center"
+                >
+                  <div class="left">
+                    <h5 class="wow fadeInUp lh40 mb-12">
+                      5 Star Rated General Contractor
+                    </h5>
+                    <p class="body-2 wow fadeInUp">
+                      Inspired design. Unparalleled experience. Exemplary
+                      service.
+                    </p>
+                  </div>
+                  <div class="right">
+                    <div class="wg-list-counter">
+                      <div class="counter-item">
+                        <div class="counter">
+                          <div class="number-counter">
+                            <h1
+                              class="number odometer color-primary"
+                              data-to="2"
+                              data-inviewport="yes"
+                            >
+                              0
+                            </h1>
+                          </div>
+                          <p class="text text-uppercase fw5">
+                            Excellence
+                            <br />Awards
+                          </p>
+                        </div>
+                      </div>
+                      <div class="counter-item">
+                        <div class="counter">
+                          <div class="number-counter">
+                            <h1
+                              class="number odometer color-primary"
+                              data-to="6"
+                              data-inviewport="yes"
+                            >
+                              0
+                            </h1>
+                          </div>
+                          <p class="text text-uppercase fw5">
+                            Completed
+                            <br />
+                            Projects
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="line-blog line-animation tf-aniamtion-line"></div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section-contact-home h-1">
-          <div class="tf-container w-1564">
-            <div class="section-contact-inner">
-              <div class="left">
+        <div class="section-about p-about">
+          <div class="tf-container">
+            <div class="row align-items-center rg-70">
+              <div class="col-lg-7">
                 <div class="section-content">
-                  <div class="heading-section mb-56">
-                    <span
-                      class="sub-title text-uppercase fw5 mb-12 tf-animate-2"
-                    >
-                      let's work together
-                    </span>
-                    <h3 class="title mb-12 tf-animate-2">
-                      Get In Touch With Us
-                    </h3>
-                    <div class="text lsp-0 tf-animate-2">
-                      If you need to repair or replace your Plumbing system,
-                      call today
-                      <br />and talk to one of our Plumbing specialists.
-                    </div>
+                  <h3 class="title fw6 mb-26 tf-animate-2">
+                    Building Saudi Arabia with Safety, Quality and Integrity
+                  </h3>
+                  <div class="desc mb-16 tf-animate-2">
+                    Al Tameez Al Thaqib delivers civil construction, site
+                    development and industrial support services. Our teams and
+                    fleet enable fast mobilization, transparent supervision and
+                    reliable execution across projects of any scale.
                   </div>
-
-                  <div class="contact-item mb-35">
-                    <div class="sub-title tf-animate-2">
-                      Call support center 24/7
-                    </div>
-                    <h4 class="title tf-animate-2">
-                      <a href="#" class="number-phone">+966 011 2068132</a>
-                    </h4>
+                  <div class="desc mb-25 tf-animate-2">
+                    We integrate planning, manpower, equipment and logistics to
+                    deliver predictable outcomes. Our HSE-first culture and
+                    preventive maintenance programs reduce downtime and risk.
                   </div>
-
-                  <div
-                    class="flex justify-content-between align-items-center gap-56 flex-wrap"
-                  >
-                    <div class="contact-item">
-                      <div class="sub-title tf-animate-2">
-                        Abi Jafar Al Mansur
-                      </div>
-                      <a href="#" class="title body-3 fw5 tf-animate-2"
-                        >Al Yarmuk, Riyadh, Saudi Arabia</a
-                      >
+                  <div class="list-benefit">
+                    <div class="benefit-items tf-animate-2">
+                      <i class="icon-circle-arrows"></i>
+                      <p class="fw6">
+                        Experienced multi-discipline field teams
+                      </p>
                     </div>
-                    <div class="contact-item">
-                      <div class="sub-title tf-animate-2" data-delay=".1s">
-                        Write to us
-                      </div>
-                      <a
-                        href="#"
-                        class="title body-3 fw5 tf-animate-2"
-                        data-delay=".1s"
-                        >info@tmz-c.com</a
-                      >
+                    <div class="benefit-items tf-animate-2">
+                      <i class="icon-circle-arrows"></i>
+                      <p class="fw6">Proven quality control and supervision</p>
+                    </div>
+                    <div class="benefit-items tf-animate-2">
+                      <i class="icon-circle-arrows"></i>
+                      <p class="fw6">
+                        24/7 equipment support and rapid mobilization
+                      </p>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="image tf-animate-4">
+                  <img
+                    src="images/section-about-p-about.jpg"
+                    data-src="images/section-about-p-about.jpg"
+                    alt=""
+                    class="lazyload"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="box-text tf-animate-2">
+                  <div class="text body-2 fw5 tf-animate-2">
+                    “ Al Tameez Al Thaqib began with a dream and has stood the
+                    test of time. By putting people and customers at the center,
+                    adopting world‑class technology and simple, reliable
+                    processes, we deliver consistent results. Our commitment to
+                    quality, cost‑competitiveness and continuous improvement has
+                    earned the trust of our clients. We do not just create the
+                    best solutions — we build lasting relationships. ”
+                  </div>
+                  <div class="name text-end tf-animate-2">
+                    Chairman’s Message
+                  </div>
+                  <div class="image-item item-1">
+                    <img
+                      src="images/wg-quote-item-1.png"
+                      data-src="images/wg-quote-item-1.png"
+                      alt="Chairman’s Message"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section-1 p-about tf-spacing-1">
+          <div class="item item-1"></div>
+          <div class="tf-container wrap-image-click">
+            <div class="section-1-inner flex justify-content-between gap-30">
+              <div class="image image-left left tf-animate-1">
+                <img
+                  src="images/p-about2-1.jpg"
+                  data-src="images/p-about2-1.jpg"
+                  alt=""
+                  class="lazyload"
+                />
               </div>
               <div class="right">
-                <form
-                  id="contactform"
-                  class="form-contact-us"
-                  method="post"
-                  action="./contact/contact-process.php"
-                >
-                  <div class="cols">
-                    <fieldset class="item">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="*Full name"
-                        required
-                      />
-                    </fieldset>
-                    <fieldset class="item">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="*Email address"
-                        required
-                      />
-                    </fieldset>
-                  </div>
-                  <div class="cols">
-                    <fieldset class="item">
-                      <input
-                        type="tel"
-                        name="phone"
-                        id="phone"
-                        placeholder="Phone number"
-                      />
-                    </fieldset>
-                    <fieldset class="item">
-                      <select
-                        name="subject"
-                        id="subject"
-                        class="select-subject"
-                        style="
-                          width: 100%;
-                          padding: 15px;
-                          border: 1px solid #e0e0e0;
-                          border-radius: 4px;
-                          font-size: 14px;
-                        "
+                <div class="wg-according" id="According1">
+                  <div class="according-item style-3 pt-0">
+                    <h4>
+                      <a
+                        href="#according1"
+                        data-bs-toggle="collapse"
+                        class="title-according content-right-item"
+                        data-image="images/p-about2-1.jpg"
+                        >Safety & Compliance</a
                       >
-                        <option value="">Select Subject</option>
-                        <option value="Equipments Rental">
-                          Equipments Rental
-                        </option>
-                        <option value="Materials Supply">
-                          Materials Supply
-                        </option>
-                        <option value="Transportation">Transportation</option>
-                        <option value="Manpower Supply">Manpower Supply</option>
-                        <option value="Porta Cabins">Porta Cabins</option>
-                        <option value="Civil Works">Civil Works</option>
-                        <option value="General Inquiry">General Inquiry</option>
-                      </select>
-                    </fieldset>
-                  </div>
-                  <fieldset>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Write message..."
-                      required
-                    ></textarea>
-                  </fieldset>
-                  <div
-                    class="flex justify-content-between align-items-center flex-wrap gap-20"
-                  >
-                    <fieldset class="check-box">
-                      <input
-                        type="checkbox"
-                        name="accept_terms"
-                        id="save"
-                        required
-                      />
-                      <label for="save"
-                        >Accept terms and conditions from Al Tameez.
-                      </label>
-                    </fieldset>
-                    <div class="send-wrap">
-                      <button
-                        type="submit"
-                        class="tf-btn style-1 hover-bg-secondary text-uppercase"
-                      >
-                        <span>send message</span>
-                        <span class="icon"
-                          ><i class="icon-arrow-right"></i
-                        ></span>
-                      </button>
+                    </h4>
+                    <div
+                      id="according1"
+                      class="collapse show"
+                      data-bs-parent="#According1"
+                    >
+                      <div class="according-content">
+                        <p class="text">
+                          Our HSE‑first culture underpins every activity on site
+                          and in our yards. We plan works methodically, train
+                          our people continuously and maintain equipment to the
+                          highest standards to ensure zero‑harm operations.
+                        </p>
+
+                        <div class="list-benefit mb-29">
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">
+                              Certified HSE procedures and toolbox talks
+                            </p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">
+                              Preventive maintenance and inspections
+                            </p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">
+                              Qualified operators and supervisors
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </form>
+                  <div class="according-item style-3 pt-0">
+                    <h4>
+                      <a
+                        href="#according2"
+                        data-bs-toggle="collapse"
+                        class="title-according content-right-item collapsed"
+                        data-image="images/p-about2-1.jpg"
+                        >Reliability & Delivery</a
+                      >
+                    </h4>
+                    <div
+                      id="according2"
+                      class="collapse"
+                      data-bs-parent="#According1"
+                    >
+                      <div class="according-content">
+                        <p class="text">
+                          With our fleet and manpower, we mobilize quickly and
+                          execute with clear supervision and reporting to keep
+                          projects on schedule and within budget.
+                        </p>
+
+                        <div class="list-benefit mb-19">
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Rapid mobilization across KSA</p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Dedicated site supervision</p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Transparent progress reporting</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="according-item style-3 pt-0">
+                    <h4>
+                      <a
+                        href="#according3"
+                        data-bs-toggle="collapse"
+                        class="title-according content-right-item collapsed"
+                        data-image="images/p-about2-1.jpg"
+                        >People & Partnership</a
+                      >
+                    </h4>
+                    <div
+                      id="according3"
+                      class="collapse"
+                      data-bs-parent="#According1"
+                    >
+                      <div class="according-content">
+                        <p class="text">
+                          We invest in our people and collaborate closely with
+                          clients and partners to solve challenges early and
+                          deliver predictable outcomes.
+                        </p>
+
+                        <div class="list-benefit mb-19">
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Skilled, multilingual workforce</p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Client‑aligned planning workshops</p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Long‑term supplier relationships</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="according-item style-3 pt-0">
+                    <h4>
+                      <a
+                        href="#according4"
+                        data-bs-toggle="collapse"
+                        class="title-according content-right-item collapsed"
+                        data-image="images/p-about2-1.jpg"
+                        >Sustainability</a
+                      >
+                    </h4>
+                    <div
+                      id="according4"
+                      class="collapse"
+                      data-bs-parent="#According1"
+                    >
+                      <div class="according-content">
+                        <p class="text">
+                          We reduce environmental impact by efficient routing,
+                          responsible disposal and optimizing fuel and resource
+                          usage across our fleet and sites.
+                        </p>
+
+                        <div class="list-benefit mb-19">
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Waste segregation and recycling</p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Route and idle‑time optimization</p>
+                          </div>
+                          <div class="benefit-items">
+                            <i class="icon-checked"></i>
+                            <p class="fw6">Low‑emission equipment options</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section-location tf-spacing-27">
-          <div class="tf-container">
-            <div class="heading-section text-center mb-62">
-              <h3 class="title mb-12 tf-animate-2">Our Locations</h3>
-              <div class="text lsp-0 tf-animate-2">
-                With a presence in three countries. We has the most
-                comprehensive local office network in the industry.
+        <section class="section-why-us h-1">
+          <div class="tf-container w-1810">
+            <div class="section-why-us-inner bg-color-secondary tf-spacing-3">
+              <div class="heading-section style-color-white mb-62">
+                <span class="sub-title text-uppercase fw5 mb-12 tf-animate-2">
+                  We work with integrity
+                </span>
+                <h3 class="title mb-16 tf-animate-2">Why Choose Us?</h3>
+                <div class="text lsp-0 tf-animate-2">
+                  Developed in close collaboration with our partners and
+                  clients, combines industry knowledge,
+                  <br />decades of experience, ingenuity and adaptability to
+                  deliver excellence to our clients.
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="tf-container w-1560">
-            <div
-              class="swiper tf-swiper list-location"
-              data-swiper='{
-                        "slidesPerView": 1,
-                        "slidesPerGroup": 1,
-                        "spaceBetween": 50,
-                        "speed": 800,
-                        "navigation": {
-                            "clickable": true,
-                            "nextEl": ".location-next",
-                            "prevEl": ".location-prev"
-                        },
-                        "breakpoints": {
-                            "767": {
-                                "slidesPerView": 2,
-                                "slidesPerGroup": 1
-                            },
-                            "1200": {
-                                "slidesPerView": 3,
-                                "slidesPerGroup": 1
-                            }
-                        }
-                    }'
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="location-item hover-img">
-                    <a href="#" class="image">
-                      <img
-                        src="images/location-item-1.jpg"
-                        data-src="images/location-item-1.jpg"
-                        alt=""
-                        class="lazyload"
-                      />
-                    </a>
-                    <div class="location-content">
-                      <div class="top-content">
-                        <h5 class="name-city lh40">
-                          <a href="#">Riyadh, Saudi Arabia</a>
-                        </h5>
-                        <p class="sub-title caption-1 text-uppercase">
-                          headquarters
-                        </p>
-                      </div>
-                      <ul>
-                        <li>
-                          <span>Address: </span> Abi Jafar Al Mansur, Al Yarmuk
-                        </li>
-                        <li>
-                          <span>Call Us: </span
-                          ><a href="#"> +966 011 2068132</a>
-                        </li>
-                        <li>
-                          <span>Mail: </span><a href="#">info@tmz-c.com</a>
-                        </li>
-                        <li><span>Open Hour: </span> 8.00 - 17.00</li>
-                      </ul>
-                      <div class="bottom-btn">
-                        <a href="#" class="tf-btn hover-bg-secondary">
-                          <span class="text-uppercase caption-1"
-                            >see location</span
-                          >
-                          <div class="icon">
-                            <i class="icon-arrow-right"></i>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
+              <div class="list-box-icon">
+                <div class="box-icon">
+                  <div class="icon wow fadeInUp">
+                    <i class="icon-security"></i>
+                  </div>
+                  <h6 class="title-box wow fadeInUp">
+                    <a href="#">Health & Safety</a>
+                  </h6>
+                  <div class="desc wow fadeInUp">
+                    Simple actions make a difference. It starts
+                    <br />and ends with each employee striving to work
+                    <br />safer every single day so they can return.
                   </div>
                 </div>
-                <!-- <div class="swiper-slide">
-                  <div class="location-item hover-img">
-                    <a href="#" class="image">
-                      <img
-                        src="images/location-item-2.jpg"
-                        data-src="image/section/location-item-2.jpg"
-                        alt=""
-                        class="lazyload"
-                      />
-                    </a>
-                    <div class="location-content">
-                      <div class="top-content">
-                        <h5 class="name-city lh40">
-                          <a href="#">California City</a>
-                        </h5>
-                        <p class="sub-title caption-1 text-uppercase">
-                          branch office
-                        </p>
-                      </div>
-                      <ul>
-                        <li>
-                          <span>Address: </span> 5396 North Reese Avenue, Fresno
-                          CA 93722
-                        </li>
-                        <li>
-                          <span>Call Us: </span><a href="#"> (225) 647-1974</a>
-                        </li>
-                        <li>
-                          <span>Mail: </span
-                          ><a href="#">themesflat@gmail.com</a>
-                        </li>
-                        <li><span>Open Hour: </span> 8.00 Am - 17.00 Pm</li>
-                      </ul>
-                      <div class="bottom-btn">
-                        <a href="#" class="tf-btn hover-bg-secondary">
-                          <span class="text-uppercase caption-1"
-                            >see location</span
-                          >
-                          <div class="icon">
-                            <i class="icon-arrow-right"></i>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
+                <div class="box-icon">
+                  <div class="icon wow fadeInUp" data-wow-delay=".1s">
+                    <i class="icon-hard-hat"></i>
                   </div>
-                </div> -->
-                <!-- <div class="swiper-slide">
-                  <div class="location-item hover-img">
-                    <a href="#" class="image">
-                      <img
-                        src="images/location-item-3.jpg"
-                        data-src="image/section/location-item-3.jpg"
-                        alt=""
-                        class="lazyload"
-                      />
-                    </a>
-                    <div class="location-content">
-                      <div class="top-content">
-                        <h5 class="name-city lh40">
-                          <a href="#">New York City</a>
-                        </h5>
-                        <p class="sub-title caption-1 text-uppercase">
-                          branch office
-                        </p>
-                      </div>
-                      <ul>
-                        <li>
-                          <span>Address: </span> 8128 Mill Street Fresh Meadows,
-                          NY 1136
-                        </li>
-                        <li>
-                          <span>Call Us: </span><a href="#">(541) 820-3369</a>
-                        </li>
-                        <li>
-                          <span>Mail: </span
-                          ><a href="#">themesflat@gmail.com</a>
-                        </li>
-                        <li><span>Open Hour: </span> 8.00 Am - 17.00 Pm</li>
-                      </ul>
-                      <div class="bottom-btn">
-                        <a href="#" class="tf-btn hover-bg-secondary">
-                          <span class="text-uppercase caption-1"
-                            >see location</span
-                          >
-                          <div class="icon">
-                            <i class="icon-arrow-right"></i>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
+                  <h6 class="title-box wow fadeInUp" data-wow-delay=".1s">
+                    <a href="#">Professional Ethics </a>
+                  </h6>
+                  <div class="desc wow fadeInUp" data-wow-delay=".1s">
+                    Integrity is one of Al Tameez core values – we
+                    <br />are committed to acting beyond reproach in <br />all
+                    matters and to doing what is ethical.
                   </div>
-                </div> -->
+                </div>
+                <div class="box-icon">
+                  <div class="icon wow fadeInUp" data-wow-delay=".2s">
+                    <i class="icon-under-construction"></i>
+                  </div>
+                  <h6 class="title-box wow fadeInUp" data-wow-delay=".2s">
+                    <a href="#">Experience & Quality</a>
+                  </h6>
+                  <div class="desc wow fadeInUp" data-wow-delay=".2s">
+                    We has a reputation for delivering quality
+                    <br />products and services. That's because our
+                    <br />employees work together.
+                  </div>
+                </div>
+                <div class="box-icon">
+                  <div class="icon wow fadeInUp" data-wow-delay=".4s">
+                    <i class="icon-clean-energy"></i>
+                  </div>
+                  <h6 class="title-box wow fadeInUp" data-wow-delay=".4s">
+                    <a href="#">Environmental Protection </a>
+                  </h6>
+                  <div class="desc wow fadeInUp" data-wow-delay=".4s">
+                    Al Tameez is committed to conducting business
+                    <br />in an environmentally responsible way. By
+                    <br />producing recycled materials.
+                  </div>
+                </div>
+              </div>
+              <div class="line-blog line-animation tf-aniamtion-line"></div>
+              <div
+                class="bottom-section flex justify-content-between align-items-center flex-wrap gap-30 position-relative z-5"
+              >
+                <h6 class="text color-white fw5 tf-animate-2">
+                  Our construction company is the perfect choice for your dream
+                  home. Contact us now today!
+                </h6>
+                <div class="tf-animate-2" data-delay="0.1s">
+                  <a href="#" class="tf-btn g-30">
+                    <span class="text-uppercase"> consultation & quote </span>
+                    <div class="icon"><i class="icon-arrow-right"></i></div>
+                  </a>
+                </div>
+              </div>
+              <div class="image-item item-1">
+                <img
+                  src="images/item-section-why-us-h-1.png"
+                  data-src="images/item-section-why-us-h-1.png"
+                  alt=""
+                  class="lazyload"
+                />
+              </div>
+              <div class="image-item item-2 tf-animate-4">
+                <img
+                  src="images/item-section-why-us-2.jpg"
+                  data-src="images/item-section-why-us-2.jpg"
+                  alt=""
+                  class="lazyload"
+                />
               </div>
             </div>
           </div>
         </section>
+
+        <!-- <div class="tf-banner h-3">
+                <div class="tf-container w-1800">
+                    <div class="banner-inner flex justify-content-between">
+                        <div class="left">
+                            <div class="banner-content">
+                                <h3 class="title-banner tf-animate-2">
+                                    Ready to work together?
+                                    <br>Join with us today.
+                                </h3>
+                                <div class="desc tf-animate-2">
+                                    As a company that is 100 percent employee-owned, we collaborate and innovate to help our
+                                    partners thrive. Our culture of ownership drives your success.
+                                </div>
+                                <div class="bottom-btn tf-animate-2">
+                                    <a href="#" class="tf-btn bg-color-white hover-bg-secondary">
+                                        <span class="text-uppercase">find your chance </span>
+                                        <div class="icon"><i class="icon-arrow-right"></i></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-item item-1">
+                                <img src="images/item-section-banner-h3-1.png" data-src="image/section/item-section-banner-h3-1.png" alt="" class="lazyload">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="image">
+                                <img src="images/section-banner-h3.jpg" data-src="image/section/section-banner-h3.jpg" alt="" class="lazyload">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        <div class="tf-container w-1600">
+          <div class="tf-marquee wg-brand p-about mb-93">
+            <div class="marquee-wrapper">
+              <div class="initial-child-container">
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-2.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-3.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-4.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-5.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-6.png" alt="" />
+                  </a>
+                </div>
+                <!-- 2 -->
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-2.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-3.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-4.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-5.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-6.png" alt="" />
+                  </a>
+                </div>
+                <!-- 3 -->
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-2.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-3.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-4.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-5.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-6.png" alt="" />
+                  </a>
+                </div>
+                <!-- 4 -->
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-1.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-2.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-3.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-4.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-5.png" alt="" />
+                  </a>
+                </div>
+                <div class="marquee-child-item">
+                  <a href="#" class="brand-item">
+                    <img src="images/brand-6.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-gallery p-about">
+          <div
+            class="swiper tf-swiper list-gallery"
+            data-swiper='{"slidesPerView":1,"spaceBetween":0,"speed":600,"navigation":{"clickable":true,"nextEl":".gallery-next","prevEl":".gallery-prev"},"pagination":{"el":".sw-pagination-gallery","clickable":true},"breakpoints":{"575":{"slidesPerView":2,"slidesPerGroup":1},"767":{"slidesPerView":3},"1150":{"slidesPerView":4}}}'
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <a href="#" class="image">
+                    <img
+                      src="images/gallery-item-1.jpg"
+                      data-src="images/gallery-item-1.jpg"
+                      alt=""
+                      class="lazyload"
+                    />
+                  </a>
+                  <div class="icon">
+                    <i class="icon-eye"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <a href="#" class="image">
+                    <img
+                      src="images/gallery-item-2.jpg"
+                      data-src="images/gallery-item-2.jpg"
+                      alt=""
+                      class="lazyload"
+                    />
+                  </a>
+                  <div class="icon">
+                    <i class="icon-eye"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <a href="#" class="image">
+                    <img
+                      src="images/gallery-item-3.jpg"
+                      data-src="images/gallery-item-3.jpg"
+                      alt=""
+                      class="lazyload"
+                    />
+                  </a>
+                  <div class="icon">
+                    <i class="icon-eye"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <a href="#" class="image">
+                    <img
+                      src="images/gallery-item-4.jpg"
+                      data-src="images/gallery-item-4.jpg"
+                      alt=""
+                      class="lazyload"
+                    />
+                  </a>
+                  <div class="icon">
+                    <i class="icon-eye"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer class="footer" id="footer">
@@ -1168,19 +1551,23 @@
                     >
                   </li> -->
                   <li class="item">
-                    <a href="our-services.html" class="caption-1 text-uppercase"
+                    <a
+                      href="../our-services.html"
+                      class="caption-1 text-uppercase"
                       >Services</a
                     >
                   </li>
                   <li class="item">
                     <a
-                      href="company-profile.html"
+                      href="../company-profile.html"
                       class="caption-1 text-uppercase"
                       >Company Profile</a
                     >
                   </li>
                   <li class="item">
-                    <a href="contact-us.html" class="caption-1 text-uppercase"
+                    <a
+                      href="../contact-us.html"
+                      class="caption-1 text-uppercase"
                       >Contact Us</a
                     >
                   </li>
@@ -1191,8 +1578,8 @@
 
                 <div class="footer-middle">
                   <div class="left logo-footer">
-                    <a href="/" class="logo">
-                      <img src="images/logo.png" alt="" />
+                    <a href="../" class="logo">
+                      <img src="../images/logo.png" alt="" />
                       <!-- <h4>Al Tameez</h4> -->
                     </a>
                     <div class="post-social bg-color-bg-1">
@@ -1329,7 +1716,7 @@
           <nav class="mobile-main-nav">
             <ul id="menu-mobile" class="menu">
               <li class="menu-item">
-                <a href="javascript:void(0)" class="collapsed">Home</a>
+                <a href="/" class="collapsed">Home</a>
                 <div
                   id="dropdown-menu-1"
                   class="collapse"
@@ -1337,7 +1724,7 @@
                 >
                   <ul class="sub-menu-mobile">
                     <li class="menu-item current-menu-mobile-item">
-                      <a href="/">Home 1</a>
+                      <a href="index.html">Home 1</a>
                     </li>
                     <li class="menu-item"><a href="home-2.html">Home 2</a></li>
                     <li class="menu-item"><a href="home-3.html">Home 3</a></li>
@@ -1353,7 +1740,9 @@
                   </ul>
                 </div>
               </li>
-              <li class="menu-item menu-item-has-children-mobile">
+              <li
+                class="menu-item current-menu-mobile-item menu-item-has-children-mobile"
+              >
                 <a
                   href="#dropdown-menu-2"
                   data-bs-toggle="collapse"
@@ -1382,8 +1771,8 @@
                                             </ul>
                                         </div>
                                     </li> -->
-                    <li class="sub-menu-item">
-                      <a href="/about-us/overview.html" class="item-link-2"
+                    <li class="sub-menu-item current-menu-mobile-item">
+                      <a href="javascript:void(0)" class="item-link-2"
                         >Overview</a
                       >
                     </li>
@@ -1513,8 +1902,8 @@
                                 </ul>
                             </div>
                         </li> -->
-              <li class="menu-item current-menu-mobile-item">
-                <a href="javascript:void(0)">Contact Us</a>
+              <li class="menu-item">
+                <a href="contact-us.html">Contact Us</a>
               </li>
             </ul>
             <div class="contact-mobile">
@@ -1556,7 +1945,6 @@
           </nav>
         </div>
       </div>
-      <!-- /.mobile-nav-wrap -->
 
       <div class="offcanvas offcanvas-top offcanvas-search" id="canvasSearch">
         <button
@@ -1614,18 +2002,17 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/lazysize.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/gsap-animation.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/Splitetext.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/carousel.js"></script>
-    <script src="js/map.min.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/jquery-validate.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/simpleParallaxVanilla.js"></script>
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
     <!-- /Javascript -->
   </body>
 </html>
