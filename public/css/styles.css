@@ -8,6 +8,9 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
+.menu-primary-menu .sub-menu .sub-menu-item.menu-item-has-children-2 .item-link-2.active + i {
+  color: var(--primary) !important;
+}
 
 /* Active state for second-level submenu (sub-menu-2) items */
 .sub-menu-2 .sub-menu-item a.active,
@@ -8062,6 +8065,49 @@ tf-swiper .sw-pagination .swiper-pagination-bullet.swiper-pagination-bullet-acti
 }
 
 .categories-siderbar .cat-sub-menu .cat-sub-item a:hover::before {
+  opacity: 1;
+}
+
+/* Active state for categories sidebar main items */
+.categories-siderbar ul li a.active,
+.categories-siderbar ul li a.active:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  padding-left: 56px;
+}
+.categories-siderbar ul li a.active::before,
+.categories-siderbar ul li a.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Active state for categories sidebar parent menu item (Heavy Equipment Rentals) */
+.categories-siderbar ul li.cat-item-has-children .cat-link.active,
+.categories-siderbar ul li.cat-item-has-children .cat-link.active:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  padding-left: 56px;
+  border-bottom: none;
+}
+.categories-siderbar ul li.cat-item-has-children .cat-link.active::before,
+.categories-siderbar ul li.cat-item-has-children .cat-link.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+.categories-siderbar ul li.cat-item-has-children .cat-link.active + i.icon-arrow-menu {
+  transform: translateY(-50%) rotate(0deg);
+  color: var(--white);
+}
+/* Submenu stays closed by default, expands only on hover */
+
+/* Active state for categories sidebar submenu items */
+.categories-siderbar .cat-sub-menu .cat-sub-item a.active,
+.categories-siderbar .cat-sub-menu .cat-sub-item a.active:hover {
+  background-color: rgba(37, 150, 190, 0.1);
+  color: var(--primary);
+  padding-left: 58px;
+}
+.categories-siderbar .cat-sub-menu .cat-sub-item a.active::before {
   opacity: 1;
 }
 
