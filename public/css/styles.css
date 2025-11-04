@@ -12029,14 +12029,27 @@ a.mapboxgl-ctrl-logo {
 }
 .project-item .image {
   height: 515px;
+  min-height: 515px;
   display: block;
   width: 100%;
   position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
 }
 .project-item .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
+  display: block;
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 .project-item .project-content {
   max-width: 494px;
@@ -12297,6 +12310,9 @@ a.mapboxgl-ctrl-logo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
 }
 .project-item.style-5 .image::before {
   content: "";
@@ -12577,6 +12593,10 @@ a.mapboxgl-ctrl-logo {
   width: 100%;
   filter: grayscale(100%);
   opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -12586,7 +12606,8 @@ a.mapboxgl-ctrl-logo {
 .wg-brand .brand-item img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  max-height: 100%;
+  object-fit: contain;
 }
 .wg-brand .brand-item:hover {
   opacity: 1;
@@ -22667,9 +22688,13 @@ a.mapboxgl-ctrl-logo {
     margin-bottom: 70px;
   }
   .wg-brand {
-    height: 60px;
+    height: 140px;
+    padding: 10px 0;
     margin-top: 70px !important;
     margin-bottom: 70px !important;
+  }
+  .tf-marquee .marquee-wrapper .initial-child-container {
+    gap: 30px;
   }
   .wg-brand.style-color-bg-2 {
     margin-top: 0 !important;
@@ -23777,8 +23802,12 @@ a.mapboxgl-ctrl-logo {
     padding: 30px 15px;
   }
   .project-item .image {
-    height: auto !important;
-    min-height: unset !important;
+    height: 400px !important;
+    min-height: 400px !important;
+  }
+  .project-item .image img {
+    object-fit: cover;
+    object-position: center center;
   }
   .project-item .project-content {
     position: unset;
