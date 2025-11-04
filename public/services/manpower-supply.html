@@ -1,105 +1,128 @@
-<!DOCTYPE html><!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]--><!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]--><head>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en-US"
+  lang="en-US"
+><!--<![endif]-->
+  <head>
     <!-- Basic Page Needs -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- [if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif] -->
-    <title>Manpower Supply Services - Al Tameez Al Thaqib Contracting Company</title>
-    <meta name="description" content="Al Tameez Al Thaqib provides skilled manpower supply services including construction workers, engineers, technicians, and specialized labor for construction and industrial projects across Saudi Arabia.">
-    <meta name="keywords" content="Manpower Supply, Construction Workers, Skilled Labor, Engineers, Technicians, Workforce Solutions, Saudi Arabia, Al Tameez Al Thaqib">
-    <meta name="author" content="Al Tameez Al Thaqib Contracting Company">
+    <title>
+      Manpower Supply Services - Al Tameez Al Thaqib Contracting Company
+    </title>
+    <meta
+      name="description"
+      content="Al Tameez Al Thaqib provides skilled manpower supply services including construction workers, engineers, technicians, and specialized labor for construction and industrial projects across Saudi Arabia."
+    />
+    <meta
+      name="keywords"
+      content="Manpower Supply, Construction Workers, Skilled Labor, Engineers, Technicians, Workforce Solutions, Saudi Arabia, Al Tameez Al Thaqib"
+    />
+    <meta name="author" content="Al Tameez Al Thaqib Contracting Company" />
 
     <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <base href="/">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <base href="/" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
     <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
 
     <!-- Magnific-popup -->
-    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/magnific-popup.min.css"
+    />
 
     <!-- Swiper -->
-    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/swiper-bundle.min.css"
+    />
 
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 
     <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="../images/icon.png">
-    <link rel="apple-touch-icon-precomposed" href="../images/icon.png">
+    <link rel="shortcut icon" href="../images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="../images/icon.png" />
 
     <style>
+      .manpower-category-item {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #28a745;
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      .manpower-category-item:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+      .manpower-category-item .category-title {
+        color: #28a745;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+      .manpower-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .manpower-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #e9ecef;
+        position: relative;
+        padding-left: 25px;
+      }
+      .manpower-item:last-child {
+        border-bottom: none;
+      }
+      .manpower-item::before {
+        content: "\2713";
+        position: absolute;
+        left: 0;
+        color: #28a745;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .manpower-item .item-text {
+        color: #333;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      @media (max-width: 768px) {
         .manpower-category-item {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 4px solid #28a745;
-            transition: all 0.3s ease;
-            height: 100%;
+          margin-bottom: 20px;
         }
-        .manpower-category-item:hover {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-        }
-        .manpower-category-item .category-title {
-            color: #28a745;
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 15px;
-        }
-        .manpower-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .manpower-item {
-            padding: 10px 0;
-            border-bottom: 1px solid #e9ecef;
-            position: relative;
-            padding-left: 25px;
-        }
-        .manpower-item:last-child {
-            border-bottom: none;
-        }
-        .manpower-item::before {
-            content: "\2713";
-            position: absolute;
-            left: 0;
-            color: #28a745;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .manpower-item .item-text {
-            color: #333;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .manpower-category-item {
-                margin-bottom: 20px;
-            }
-        }
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Preload -->
     <div class="preload preload-container">
-        <div class="middle">
-        </div>
-    </div><!-- /.preload -->
+      <div class="middle"></div>
+    </div>
+    <!-- /.preload -->
 
     <div class="wrapper">
-
-        <!-- header -->
-        <header class="header style-2 bg-color-secdonary header-sticky">
+      <!-- header -->
+      <header class="header style-2 bg-color-secdonary header-sticky">
         <div class="header-content">
           <div class="logo logo-header">
             <a href="/" class="brand-text-logo">
@@ -271,7 +294,7 @@
                 <a href="javascript:void(0)" class="item-link">Services</a>
                 <ul class="sub-menu">
                   <li class="sub-menu-item">
-                    <a href="/services/our-services.html" class="item-link-2 "
+                    <a href="/services/our-services.html" class="item-link-2"
                       >Our Services</a
                     >
                   </li>
@@ -396,7 +419,7 @@
         </div>
       </header>
 
-        <header class="header style-1 bg-color-secdonary">
+      <header class="header style-1 bg-color-secdonary">
         <div class="header-top">
           <div class="header-content">
             <div class="logo logo-header">
@@ -649,15 +672,15 @@
                   <a href="javascript:void(0)" class="item-link">Services</a>
                   <ul class="sub-menu">
                     <li class="sub-menu-item">
-                    <a href="/services/our-services.html" class="item-link-2 "
-                      >Our Services</a
-                    >
-                  </li>
-                  <li class="sub-menu-item">
-                    <a href="/services/civil-work.html" class="item-link-2"
-                      >Civil Work</a
-                    >
-                  </li>
+                      <a href="/services/our-services.html" class="item-link-2"
+                        >Our Services</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="/services/civil-work.html" class="item-link-2"
+                        >Civil Work</a
+                      >
+                    </li>
                     <li class="sub-menu-item menu-item-has-children-2">
                       <a href="" class="item-link-2"
                         >Heavy Equipment Rentals & Industrial Services</a
@@ -703,15 +726,17 @@
                       </ul>
                     </li>
                     <li class="sub-menu-item">
-                    <a href="/services/transportation.html" class="item-link-2"
-                      >Transportation</a
-                    >
-                  </li>
-                  <li class="sub-menu-item">
-                    <a href="javascript:void(0)" class="item-link-2 active"
-                      >Manpower Supply</a
-                    >
-                  </li>
+                      <a
+                        href="/services/transportation.html"
+                        class="item-link-2"
+                        >Transportation</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="javascript:void(0)" class="item-link-2 active"
+                        >Manpower Supply</a
+                      >
+                    </li>
                     <li class="sub-menu-item">
                       <a
                         href="/services/material-supply.html"
@@ -777,331 +802,446 @@
         </div>
       </header>
 
-        <div class="page-title">
-            <div class="page-title-inner">
-                <div class="left">
-                    <div class="page-content">
-                        <div class="subtext text-uppercase">
-                            Al Tameez Al Thaqib Services
-                        </div>
-                        <h2 class="title">
-                            Manpower Supply
-                        </h2>
-                        <div class="text">
-                            Professional manpower supply services for all your construction and industrial projects.
-                            <br>We provide skilled workers, engineers, technicians, and specialized labor with expertise and reliability across Saudi Arabia.
-                        </div>
-                        <div class="breadcrumb">
-                            <a href="../index.html" class="text-uppercase">Home</a>
-                            <a href="../our-services.html" class="text-uppercase">our services</a>
-                            <span class="text-uppercase">Manpower Supply</span>
-                        </div>
-                    </div>
-                    <div class="image-item item-1">
-                        <img src="../images/page-title-item-1.png" data-src="../image/page-title/page-title-item-1.png" alt="" class=" ls-is-cached lazyloaded">
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="image">
-                        <img src="../images/page-title-10.jpg" data-src="../image/page-title/page-title-10.jpg" alt="">
-                    </div>
-                </div>
+      <div class="page-title">
+        <div class="page-title-inner">
+          <div class="left">
+            <div class="page-content">
+              <div class="subtext text-uppercase">
+                Al Tameez Al Thaqib Services
+              </div>
+              <h2 class="title">Manpower Supply</h2>
+              <div class="text">
+                Professional manpower supply services for all your construction
+                and industrial projects.
+                <br />We provide skilled workers, engineers, technicians, and
+                specialized labor with expertise and reliability across Saudi
+                Arabia.
+              </div>
+              <div class="breadcrumb">
+                <a href="../index.html" class="text-uppercase">Home</a>
+                <a href="../our-services.html" class="text-uppercase"
+                  >our services</a
+                >
+                <span class="text-uppercase">Manpower Supply</span>
+              </div>
             </div>
-        </div>
-
-        <div class="main-content">
-            <div class="tf-container tf-spacing-1">
-                <div class="row rg-70">
-                    <div class="col-lg-8">
-                        <div class="section-details-services">
-
-                            <div class="swiper tf-swiper img-list mb-47" data-swiper="{
-                                    " slidesperview":="" 1,="" "spacebetween":="" 0,="" "speed":="" 1000,="" "loop":="" true,="" "navigation":="" {="" "clickable":="" "nextel":="" ".img-next",="" "prevel":="" ".img-prev"="" }="" }"="">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="image image-blog">
-                                            <img src="../images/image-services-details.jpg" data-src="../images/image-services-details.jpg" alt="" class="lazyload">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="image image-blog">
-                                            <img src="../images/image-services-details.jpg" data-src="../images/image-services-details.jpg" alt="" class="lazyload">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="image image-blog">
-                                            <img src="../images/image-services-details.jpg" data-src="../images/image-services-details.jpg" alt="" class="lazyload">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-btn">
-                                    <div class="arrow-btn no-mobile-hidden style-2 arrow-prev img-prev bg-color-secondary">
-                                        <i class="icon-left-arrow11"></i>
-                                    </div>
-                                    <div class="arrow-btn no-mobile-hidden style-2 arrow-next img-next bg-color-secondary">
-                                        <i class="icon-right-arrow11"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="details-services" style="border-bottom: 1px solid var(--line-4)">
-                                <h5 class="title lh30 mb-23">Description Of The Service</h5>
-                                <div class="desc mb-35">
-                                    <p class="text-details mb-15">
-                                        Al Tameez Al Thaqib Contracting Company provides comprehensive manpower supply services for construction and industrial projects across Saudi Arabia. We have built a trusted network of skilled professionals including construction workers, engineers, technicians, supervisors, and specialized labor to support our clients' workforce needs with excellence and reliability.
-                                    </p>
-                                    <p class="text-details">
-                                        Our manpower supply services are managed by experienced human resources professionals who understand the critical importance of having the right people for each project phase. We maintain a diverse pool of qualified workers with expertise in various construction disciplines, from general laborers to highly skilled craftsmen, all properly certified and experienced to meet the demands of modern construction projects.
-                                    </p>
-                                </div>
-
-                                <p class="title-small body-3 fw7 mb-14">
-                                    Our Manpower Categories
-                                </p>
-
-                                <div class="desc mb-35">
-                                    <p class="text-details">
-                                        We offer a comprehensive range of manpower supply services tailored to meet the diverse workforce needs of construction and industrial projects. All personnel are properly trained, certified, and compliant with Saudi Arabia's labor regulations and safety standards.
-                                    </p>
-                                </div>
-
-                                <div class="row rg-30 mb-30">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Labor</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Skilled Labor</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Un Skilled Labor</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Driver</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Light Driver</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Medium Driver</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Heavy Driver</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Operator</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Crane Operator</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">All Kind Of Earth Moving Equipment Operator</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Riggers</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Engineers</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Civil Engineers</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Mechanical Engineers</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Electrical Engineers</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">QA/QC</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">QA/QC Civil</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">QA/QC Mechanical</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">QA/QC Piping</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">QA/QC Welding Inspectors</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">QA/QC Electrical</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Safety</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Safety Officers</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Safety Supervisors</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Site Supervisors</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Civil Site Supervisors</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Mechanical Site Supervisors</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Electrical Site Supervisors</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Foreman</h6>
-                                            <ul class="manpower-list">
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Civil Foreman</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Mechanical Foreman</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Electrical Foreman</span>
-                                                </li>
-                                                <li class="manpower-item">
-                                                    <span class="item-text">Piping Foreman</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Qualified Welders</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="manpower-category-item mb-30">
-                                            <h6 class="category-title fw7 mb-15">Painting Inspectors</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="sidebar-content categories-siderbar">
-                            <div class="title">
-                                <p class="body-2 text-uppercase">
-                                    categories
-                                </p>
-                            </div>
-                            <ul>
-                                <li class="cat-item"><a href="/services/civil-work.html">Civil Work</a></li>
-                                <li class="cat-item cat-item-has-children position-relative">
-                                    <a href="javascript:void(0)" class="cat-link">Heavy Equipment Rentals & Industrial Services</a>
-                                    <i class="icon-arrow-menu"></i>
-                                    <ul class="cat-sub-menu">
-                                        <li class="cat-sub-item"><a href="/services/heavy-equipment-rentals/mobile-cranes.html">Mobile Cranes</a></li>
-                                        <li class="cat-sub-item"><a href="/services/heavy-equipment-rentals/heavy-equipment.html">Heavy Equipment</a></li>
-                                        <li class="cat-sub-item"><a href="/services/heavy-equipment-rentals/light-equipment.html">Light Equipment</a></li>
-                                        <li class="cat-sub-item"><a href="/services/heavy-equipment-rentals/earth-moving-equipment.html">Earth Moving Equipment</a></li>
-                                        <li class="cat-sub-item"><a href="/services/heavy-equipment-rentals/industrial-equipment.html">Industrial Equipment</a></li>
-                                        <li class="cat-sub-item"><a href="/services/heavy-equipment-rentals/heavy-&-light-vehicles.html">Heavy and Light Vehicles</a></li>
-                                    </ul>
-                                </li>
-                                <li class="cat-item"><a href="/services/transportation.html">Transportation</a></li>
-                                <li class="cat-item"><a href="javascript:void(0)" class="active">Manpower Supply</a></li>
-                                <li class="cat-item"><a href="/services/material-supply.html">Material Supply</a></li>
-                                <li class="cat-item"><a href="/services/porta-cabin-supply.html">Porta Cabin Supply</a></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-content why-siderbar">
-                            <div class="title">
-                                <p class="body-2 text-uppercase">
-                                    why choose us
-                                </p>
-                            </div>
-                            <div class="list-why-item">
-                                <div class="sidebar-why-item">
-                                    <div class="icon">
-                                        <i class="icon-cone"></i>
-                                    </div>
-                                    <a href="#" class="name-why-item body-2">Years Of Experience</a>
-                                </div>
-                                <div class="sidebar-why-item">
-                                    <div class="icon">
-                                        <i class="icon-medal-ribbon"></i>
-                                    </div>
-                                    <a href="#" class="name-why-item body-2">Many Prestigious Awards</a>
-                                </div>
-                                <div class="sidebar-why-item">
-                                    <div class="icon">
-                                        <i class="icon-multiple-users"></i>
-                                    </div>
-                                    <a href="#" class="name-why-item body-2">Experienced Engineer</a>
-                                </div>
-                                <div class="sidebar-why-item">
-                                    <div class="icon">
-                                        <i class="icon-chat1"></i>
-                                    </div>
-                                    <a href="#" class="name-why-item body-2">Free Consulting</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-contact text-center">
-                            <div class="logo-contact">
-                                <img src="../images/logo.png" alt="" class="lazyload" style="width: 50%;">
-                            </div>
-                            <div class="content mb-43">
-                                <div class="title body-2 text-uppercase">
-                                    Let’s Start Work Together
-                                </div>
-                                <h5 class="numberphone fw6"><a href="#">+966 011 2068132</a></h5>
-                                <ul class="mb-15">
-                                    <li><span>Abi Jafar Al Mansur, Al Yarmuk</span></li>
-                                    <li><span>Riyadh, Kingdom of Saudi Arabia</span></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">info@tmz-c.com</a></li>
-                                    <li><span>10.00 - 17.00</span></li>
-                                </ul>
-                            </div>
-                            <a href="../contact-us.html" class="contact-siderbar-btn caption-1 text-uppercase fw6">contact us today</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="image-item item-1">
+              <img
+                src="../images/page-title-item-1.png"
+                data-src="../image/page-title/page-title-item-1.png"
+                alt=""
+                class="ls-is-cached lazyloaded"
+              />
             </div>
+          </div>
+          <div class="right">
+            <div class="image">
+              <img
+                src="../images/page-title-10.jpg"
+                data-src="../image/page-title/page-title-10.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <footer class="footer" id="footer">
+      <div class="main-content">
+        <div class="tf-container tf-spacing-1">
+          <div class="row rg-70">
+            <div class="col-lg-8">
+              <div class="section-details-services">
+                <div
+                  class="swiper tf-swiper img-list mb-47"
+                  data-swiper='{
+                                    "slidesPerView": 1,
+                                    "spaceBetween": 0,
+                                    "speed": 1000,
+                                    "loop": false,
+                                    "navigation": {
+                                        "clickable": true,
+                                        "nextEl": ".img-next",
+                                        "prevEl": ".img-prev"
+                                    }
+                                }'
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="image image-blog">
+                        <img
+                          src="../images/services/manpower-supply.jpg"
+                          data-src="../images/services/manpower-supply.jpg"
+                          alt="Manpower Supply"
+                          class="lazyload"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="list-btn">
+                    <div
+                      class="arrow-btn no-mobile-hidden style-2 arrow-prev img-prev bg-color-secondary"
+                    >
+                      <i class="icon-left-arrow11"></i>
+                    </div>
+                    <div
+                      class="arrow-btn no-mobile-hidden style-2 arrow-next img-next bg-color-secondary"
+                    >
+                      <i class="icon-right-arrow11"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="details-services"
+                  style="border-bottom: 1px solid var(--line-4)"
+                >
+                  <h5 class="title lh30 mb-23">Description Of The Service</h5>
+                  <div class="desc mb-35">
+                    <p class="text-details mb-15">
+                      Al Tameez Al Thaqib Contracting Company provides
+                      comprehensive manpower supply services for construction
+                      and industrial projects across Saudi Arabia. We have built
+                      a trusted network of skilled professionals including
+                      construction workers, engineers, technicians, supervisors,
+                      and specialized labor to support our clients' workforce
+                      needs with excellence and reliability.
+                    </p>
+                    <p class="text-details">
+                      Our manpower supply services are managed by experienced
+                      human resources professionals who understand the critical
+                      importance of having the right people for each project
+                      phase. We maintain a diverse pool of qualified workers
+                      with expertise in various construction disciplines, from
+                      general laborers to highly skilled craftsmen, all properly
+                      certified and experienced to meet the demands of modern
+                      construction projects.
+                    </p>
+                  </div>
+
+                  <p class="title-small body-3 fw7 mb-14">
+                    Our Manpower Categories
+                  </p>
+
+                  <div class="desc mb-35">
+                    <p class="text-details">
+                      We offer a comprehensive range of manpower supply services
+                      tailored to meet the diverse workforce needs of
+                      construction and industrial projects. All personnel are
+                      properly trained, certified, and compliant with Saudi
+                      Arabia's labor regulations and safety standards.
+                    </p>
+                  </div>
+
+                  <div class="row rg-30 mb-30">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Labor</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">Skilled Labor</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Un Skilled Labor</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Driver</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">Light Driver</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Medium Driver</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Heavy Driver</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Operator</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">Crane Operator</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text"
+                              >All Kind Of Earth Moving Equipment Operator</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Riggers</h6>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Engineers</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">Civil Engineers</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Mechanical Engineers</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Electrical Engineers</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">QA/QC</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">QA/QC Civil</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">QA/QC Mechanical</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">QA/QC Piping</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text"
+                              >QA/QC Welding Inspectors</span
+                            >
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">QA/QC Electrical</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Safety</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">Safety Officers</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Safety Supervisors</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">
+                          Site Supervisors
+                        </h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text"
+                              >Civil Site Supervisors</span
+                            >
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text"
+                              >Mechanical Site Supervisors</span
+                            >
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text"
+                              >Electrical Site Supervisors</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">Foreman</h6>
+                        <ul class="manpower-list">
+                          <li class="manpower-item">
+                            <span class="item-text">Civil Foreman</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Mechanical Foreman</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Electrical Foreman</span>
+                          </li>
+                          <li class="manpower-item">
+                            <span class="item-text">Piping Foreman</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">
+                          Qualified Welders
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="manpower-category-item mb-30">
+                        <h6 class="category-title fw7 mb-15">
+                          Painting Inspectors
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="sidebar-content categories-siderbar">
+                <div class="title">
+                  <p class="body-2 text-uppercase">categories</p>
+                </div>
+                <ul>
+                  <li class="cat-item">
+                    <a href="/services/civil-work.html">Civil Work</a>
+                  </li>
+                  <li class="cat-item cat-item-has-children position-relative">
+                    <a href="javascript:void(0)" class="cat-link"
+                      >Heavy Equipment Rentals & Industrial Services</a
+                    >
+                    <i class="icon-arrow-menu"></i>
+                    <ul class="cat-sub-menu">
+                      <li class="cat-sub-item">
+                        <a
+                          href="/services/heavy-equipment-rentals/mobile-cranes.html"
+                          >Mobile Cranes</a
+                        >
+                      </li>
+                      <li class="cat-sub-item">
+                        <a
+                          href="/services/heavy-equipment-rentals/heavy-equipment.html"
+                          >Heavy Equipment</a
+                        >
+                      </li>
+                      <li class="cat-sub-item">
+                        <a
+                          href="/services/heavy-equipment-rentals/light-equipment.html"
+                          >Light Equipment</a
+                        >
+                      </li>
+                      <li class="cat-sub-item">
+                        <a
+                          href="/services/heavy-equipment-rentals/earth-moving-equipment.html"
+                          >Earth Moving Equipment</a
+                        >
+                      </li>
+                      <li class="cat-sub-item">
+                        <a
+                          href="/services/heavy-equipment-rentals/industrial-equipment.html"
+                          >Industrial Equipment</a
+                        >
+                      </li>
+                      <li class="cat-sub-item">
+                        <a
+                          href="/services/heavy-equipment-rentals/heavy-&-light-vehicles.html"
+                          >Heavy and Light Vehicles</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="cat-item">
+                    <a href="/services/transportation.html">Transportation</a>
+                  </li>
+                  <li class="cat-item">
+                    <a href="javascript:void(0)" class="active"
+                      >Manpower Supply</a
+                    >
+                  </li>
+                  <li class="cat-item">
+                    <a href="/services/material-supply.html">Material Supply</a>
+                  </li>
+                  <li class="cat-item">
+                    <a href="/services/porta-cabin-supply.html"
+                      >Porta Cabin Supply</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar-content why-siderbar">
+                <div class="title">
+                  <p class="body-2 text-uppercase">why choose us</p>
+                </div>
+                <div class="list-why-item">
+                  <div class="sidebar-why-item">
+                    <div class="icon">
+                      <i class="icon-cone"></i>
+                    </div>
+                    <a href="#" class="name-why-item body-2"
+                      >Years Of Experience</a
+                    >
+                  </div>
+                  <div class="sidebar-why-item">
+                    <div class="icon">
+                      <i class="icon-medal-ribbon"></i>
+                    </div>
+                    <a href="#" class="name-why-item body-2"
+                      >Many Prestigious Awards</a
+                    >
+                  </div>
+                  <div class="sidebar-why-item">
+                    <div class="icon">
+                      <i class="icon-multiple-users"></i>
+                    </div>
+                    <a href="#" class="name-why-item body-2"
+                      >Experienced Engineer</a
+                    >
+                  </div>
+                  <div class="sidebar-why-item">
+                    <div class="icon">
+                      <i class="icon-chat1"></i>
+                    </div>
+                    <a href="#" class="name-why-item body-2">Free Consulting</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-contact text-center">
+                <div class="logo-contact">
+                  <img
+                    src="../images/logo.png"
+                    alt=""
+                    class="lazyload"
+                    style="width: 50%"
+                  />
+                </div>
+                <div class="content mb-43">
+                  <div class="title body-2 text-uppercase">
+                    Let’s Start Work Together
+                  </div>
+                  <h5 class="numberphone fw6">
+                    <a href="#">+966 011 2068132</a>
+                  </h5>
+                  <ul class="mb-15">
+                    <li><span>Abi Jafar Al Mansur, Al Yarmuk</span></li>
+                    <li><span>Riyadh, Kingdom of Saudi Arabia</span></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">info@tmz-c.com</a></li>
+                    <li><span>10.00 - 17.00</span></li>
+                  </ul>
+                </div>
+                <a
+                  href="../contact-us.html"
+                  class="contact-siderbar-btn caption-1 text-uppercase fw6"
+                  >contact us today</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer" id="footer">
         <div class="tf-container">
           <div class="row">
             <div class="col-12">
@@ -1148,7 +1288,9 @@
                     >
                   </li> -->
                   <li class="item">
-                    <a href="../our-services.html" class="caption-1 text-uppercase"
+                    <a
+                      href="../our-services.html"
+                      class="caption-1 text-uppercase"
                       >Services</a
                     >
                   </li>
@@ -1160,7 +1302,9 @@
                     >
                   </li>
                   <li class="item">
-                    <a href="../contact-us.html" class="caption-1 text-uppercase"
+                    <a
+                      href="../contact-us.html"
+                      class="caption-1 text-uppercase"
                       >Contact Us</a
                     >
                   </li>
@@ -1272,7 +1416,7 @@
         </div>
       </footer>
 
-        <div class="offcanvas offcanvas-start mobile-nav-wrap" id="canvasMobile">
+      <div class="offcanvas offcanvas-start mobile-nav-wrap" id="canvasMobile">
         <div class="inner-mobile-nav">
           <div class="top-header-mobi">
             <div class="logo-mobile">
@@ -1400,10 +1544,10 @@
                   data-bs-parent="#menu-mobile"
                 >
                   <ul class="sub-menu-mobile" id="sub-menu-mobile-2">
-                    <li class="menu-item ">
+                    <li class="menu-item">
                       <a href="/services/our-services.html">Our Services</a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item">
                       <a href="/services/civil-work.html">Civil Work</a>
                     </li>
                     <li class="menu-item menu-item-has-children-mobile">
@@ -1462,9 +1606,7 @@
                       <a href="/services/transportation.html">Transportation</a>
                     </li>
                     <li class="menu-item current-menu-mobile-item">
-                      <a href="javascript:void(0)"
-                        >Manpower Supply</a
-                      >
+                      <a href="javascript:void(0)">Manpower Supply</a>
                     </li>
                     <li class="menu-item">
                       <a href="/services/material-supply.html"
@@ -1542,35 +1684,55 @@
         </div>
       </div>
 
-        <div class="offcanvas offcanvas-top offcanvas-search" id="canvasSearch">
-            <button class="btn-close-popup" data-bs-dismiss="offcanvas" aria-label="Close">
-                <i class="icon-close"></i>
-            </button>
-            <a href="../index.html" class="logo">
-                <img src="../images/logo-black.svg" alt="">
-            </a>
-            <div class="tf-container">
-                <div class="wg-box-search">
-                    <form action="#" class="form-search">
-                        <fieldset class="input-search">
-                            <input type="text" name="search" id="search" placeholder="Searching....">
-                            <button type="submit" class="btn-search">
-                                <i class="icon-search"></i>
-                            </button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+      <div class="offcanvas offcanvas-top offcanvas-search" id="canvasSearch">
+        <button
+          class="btn-close-popup"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="icon-close"></i>
+        </button>
+        <a href="../index.html" class="logo">
+          <img src="../images/logo-black.svg" alt="" />
+        </a>
+        <div class="tf-container">
+          <div class="wg-box-search">
+            <form action="#" class="form-search">
+              <fieldset class="input-search">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Searching...."
+                />
+                <button type="submit" class="btn-search">
+                  <i class="icon-search"></i>
+                </button>
+              </fieldset>
+            </form>
+          </div>
         </div>
+      </div>
 
-        <!-- Go-top -->
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 277.672;">
-                </path>
-            </svg>
-        </div><!-- /.go-top -->
-
+      <!-- Go-top -->
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path
+            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            style="
+              transition: stroke-dashoffset 10ms linear;
+              stroke-dasharray: 307.919, 307.919;
+              stroke-dashoffset: 277.672;
+            "
+          ></path>
+        </svg>
+      </div>
+      <!-- /.go-top -->
     </div>
 
     <!-- Javascript -->
@@ -1579,12 +1741,11 @@
     <script src="../js/lazysize.min.js"></script>
     <script src="../js/magnific-popup.min.js"></script>
     <script src="../js/wow.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/carousel.js"></script>
     <script src="../js/simpleParallaxVanilla.js"></script>
 
     <script type="text/javascript" src="../js/main.js"></script>
     <!-- /Javascript -->
-
-
-
-
-</body></html>
+  </body>
+</html>

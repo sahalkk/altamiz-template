@@ -20274,20 +20274,53 @@ a.mapboxgl-ctrl-logo {
 
 .section-details-services .img-list {
   position: relative;
+  width: 100%;
+  height: 600px;
+}
+.section-details-services .img-list .swiper {
+  width: 100%;
+  height: 100%;
+}
+.section-details-services .img-list .swiper-slide {
+  height: 100%;
+  width: 100%;
+}
+.section-details-services .img-list .image-blog {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.section-details-services .img-list .image-blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center center;
 }
 .section-details-services .img-list .arrow-btn {
   opacity: 1;
   visibility: visible;
-  position: unset;
+  position: relative;
   transform: translateY(0);
   width: 61px;
   height: 61px;
+  z-index: 10;
+  cursor: pointer;
+  pointer-events: auto;
 }
 .section-details-services .img-list .list-btn {
   position: absolute;
   bottom: 22px;
   left: 24px;
   gap: 9px;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .section-details-services .img-list {
+    height: 400px;
+  }
 }
 .section-details-services .benefit-row .list-benefit {
   max-width: 48%;
