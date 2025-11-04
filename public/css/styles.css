@@ -2,8 +2,20 @@
 .menu-primary-menu .sub-menu .item-link-2.active,
 .menu-primary-menu .sub-menu .item-link-2.active:hover {
   color: var(--primary) !important;
+  padding-left: 20px;
 }
-.menu-primary-menu .sub-menu .item-link-2.active::before {
+.menu-primary-menu .sub-menu .item-link-2.active::after {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Active state for second-level submenu (sub-menu-2) items */
+.sub-menu-2 .sub-menu-item a.active,
+.sub-menu-2 .sub-menu-item a.active:hover {
+  color: var(--primary) !important;
+  padding-left: 20px;
+}
+.sub-menu-2 .sub-menu-item a.active::after {
   opacity: 1 !important;
   visibility: visible !important;
 }
