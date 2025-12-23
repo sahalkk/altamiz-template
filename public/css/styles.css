@@ -1882,7 +1882,9 @@ a:hover, a:focus {
 }
 
 .logo-header img {
-  max-width: 212px;
+  height: auto;
+  max-height: 90px;
+  /* max-width: 212px; */
   width: 100%;
 }
 .logo-header.bg-color-primary {
@@ -1962,8 +1964,8 @@ a:hover, a:focus {
   margin-right: auto;
 }
 .header .header-top {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .header .header-top .header-content {
   max-width: 1620px;
