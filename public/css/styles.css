@@ -13922,15 +13922,21 @@ a.mapboxgl-ctrl-logo {
 
 .gallery-item {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .gallery-item .image {
-  display: inline-block;
+  position: relative;
+  display: block;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .gallery-item .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 .gallery-item .image::before {
   content: "";
@@ -14000,6 +14006,10 @@ a.mapboxgl-ctrl-logo {
   top: 50%;
   opacity: 1;
   visibility: visible;
+}
+
+.list-gallery .swiper-slide{
+  height: clamp(200px, 30vw, 350px);
 }
 
 .wg-404 .image {
