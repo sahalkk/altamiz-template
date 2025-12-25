@@ -10233,7 +10233,7 @@ a.mapboxgl-ctrl-logo {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 @keyframes tf-preload {
@@ -12615,6 +12615,7 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
 .tf-marquee .marquee-wrapper {
   display: -webkit-box;
@@ -12625,6 +12626,8 @@ a.mapboxgl-ctrl-logo {
   animation: infiniteScroll 50s linear infinite;
   align-items: center;
   transition: animation-duration 300ms;
+  will-change: transform;
+  flex-shrink: 0;
 }
 .tf-marquee .marquee-wrapper .initial-child-container {
   flex: 0 0 auto;
@@ -12633,10 +12636,11 @@ a.mapboxgl-ctrl-logo {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  min-width: auto;
+  flex-shrink: 0;
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  min-width: 0;
 }
 .tf-marquee .marquee-wrapper .initial-child-container .marquee-child-item {
   display: inline-flex;

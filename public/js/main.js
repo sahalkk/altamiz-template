@@ -900,5 +900,29 @@
     gotop();
     preloader();
     categoryMenuToggle();
+    
+    // Fix marquee infinite scroll
+    var fixMarquee = function() {
+      $('.tf-marquee .marquee-wrapper').each(function() {
+        var $wrapper = $(this);
+        var $firstContainer = $wrapper.find('.initial-child-container').first();
+        
+        if ($firstContainer.length) {
+          // Get the width of one container
+          var containerWidth = $firstContainer.outerWidth(true);
+          
+          // Set the wrapper width to exactly double (for seamless loop)
+          if (containerWidth > 0) {
+            $wrapper.css('width', (containerWidth * 2) + 'px');
+          }
+        }
+      });
+    };
+    
+    // Run on load and resize
+    fixMarquee();
+    $(window).on('resize', function() {
+      setTimeout(fixMarquee, 100);
+    });
   });
 })(jQuery);
