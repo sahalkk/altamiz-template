@@ -395,8 +395,8 @@
                     </svg>
                   </div>
                   <div class="item-content">
-                    <p class="title text-uppercase caption-1">Call Us 24/7</p>
-                    <p class="description">+966 011 2068132</p>
+                    <p class="title text-uppercase caption-1" data-content="callUsLabel">Call Us 24/7</p>
+                    <p class="description" data-content="phone">+966 011 2068132</p>
                   </div>
                 </div>
                 <div class="social-item">
@@ -404,8 +404,8 @@
                     <i class="icon-mail"></i>
                   </div>
                   <div class="item-content">
-                    <p class="title text-uppercase caption-1">send mail us</p>
-                    <p class="description">info@tmz-c.com</p>
+                    <p class="title text-uppercase caption-1" data-content="sendMailLabel">send mail us</p>
+                    <p class="description" data-content="email">info@tmz-c.com</p>
                   </div>
                 </div>
                 <div class="social-item">
@@ -413,10 +413,10 @@
                     <i class="icon-map-pin"></i>
                   </div>
                   <div class="item-content">
-                    <p class="title text-uppercase caption-1">
+                    <p class="title text-uppercase caption-1" data-content="addressLine1">
                       Abi Jafar Al Mansur, Al Yarmuk
                     </p>
-                    <p class="description">Riyadh, Kingdom of Saudi Arabia</p>
+                    <p class="description" data-content="addressLine2">Riyadh, Kingdom of Saudi Arabia</p>
                   </div>
                 </div>
               </div>
@@ -753,11 +753,11 @@
         <div class="page-title-inner">
           <div class="left">
             <div class="page-content">
-              <div class="subtext text-uppercase">
+              <div class="subtext text-uppercase" data-content="pageSubtitle">
                 Al Tameez Al Thaqib Services
               </div>
-              <h2 class="title">Porta Cabin Supply</h2>
-              <div class="text">
+              <h2 class="title" data-content="pageTitle">Porta Cabin Supply</h2>
+              <div class="text" data-content="description">
                 Quality portable cabin solutions for all your construction and
                 industrial project needs.
                 <br />We provide modular offices, site offices, accommodation
@@ -849,8 +849,8 @@
                 </div>
 
                 <div class="details-services style-border-bottom">
-                  <h5 class="title lh30 mb-23">Description Of The Service</h5>
-                  <div class="desc mb-35">
+                  <h5 class="title lh30 mb-23" data-content="sectionTitle">Description Of The Service</h5>
+                  <div class="desc mb-35" data-content="sectionContent">
                     <p class="text-details mb-15">
                       Al Tameez Al Thaqib Contracting Company provides
                       comprehensive porta cabin supply services for construction
@@ -1042,15 +1042,15 @@
                     Let’s Start Work Together
                   </div>
                   <h5 class="numberphone fw6">
-                    <a href="#">+966 011 2068132</a>
+                    <a href="#" data-content="phone">+966 011 2068132</a>
                   </h5>
                   <ul class="mb-15">
-                    <li><span>Abi Jafar Al Mansur, Al Yarmuk</span></li>
-                    <li><span>Riyadh, Kingdom of Saudi Arabia</span></li>
+                    <li><span data-content="addressLine1">Abi Jafar Al Mansur, Al Yarmuk</span></li>
+                    <li><span data-content="addressLine2">Riyadh, Kingdom of Saudi Arabia</span></li>
                   </ul>
                   <ul>
-                    <li><a href="#">info@tmz-c.com</a></li>
-                    <li><span>10.00 - 17.00</span></li>
+                    <li><a href="#" data-content="email">info@tmz-c.com</a></li>
+                    <li><span data-content="workingHours">10.00 - 17.00</span></li>
                   </ul>
                 </div>
                 <a
@@ -1178,22 +1178,22 @@
                       <div class="icon">
                         <i class="icon-map-pin2"></i>
                       </div>
-                      <span
-                        >Abi Jafar Al Mansur <br />
-                        Al Yarmuk, Riyadh, Saudi Arabia
+                      <span>
+                        <span data-content="addressLine1">Abi Jafar Al Mansur</span> <br />
+                        <span data-content="addressLine2">Al Yarmuk, Riyadh, Saudi Arabia</span>
                       </span>
                     </div>
                     <div class="item">
                       <div class="icon">
                         <i class="icon-call"></i>
                       </div>
-                      <span>Call Us: <a href="#">+966 011 2068132</a></span>
+                      <span>Call Us: <a href="#" data-content="phone">+966 011 2068132</a></span>
                     </div>
                     <div class="item">
                       <div class="icon">
                         <i class="icon-map-pin2"></i>
                       </div>
-                      <span>Mail: <a href="#">info@tmz-c.com</a></span>
+                      <span>Mail: <a href="#" data-content="email">info@tmz-c.com</a></span>
                     </div>
                   </div>
                   <!-- <div class="right subscribe footer-list">
@@ -1471,12 +1471,11 @@
               <div class="title text-uppercase body-3 fw6">contact us</div>
               <ul class="contact-megamenu">
                 <li class="item">
-                  Abi Jafar Al Mansur, Al Yarmuk, Riyadh, Kingdom of Saudi
-                  Arabia
+                  <span data-content="addressLine1">Abi Jafar Al Mansur, Al Yarmuk</span>, <span data-content="addressLine2">Riyadh, Kingdom of Saudi Arabia</span>
                 </li>
-                <li class="item">+966 011 2068132</li>
-                <li class="item">info@tmz-c.com</li>
-                <li class="item">8.00 Am - 17.00 Pm</li>
+                <li class="item"><span data-content="phone">+966 011 2068132</span></li>
+                <li class="item"><span data-content="email">info@tmz-c.com</span></li>
+                <li class="item"><span data-content="workingHours">8.00 Am - 17.00 Pm</span></li>
               </ul>
               <div class="post-social none-border">
                 <ul>
@@ -1569,6 +1568,7 @@
     <script src="../js/simpleParallaxVanilla.js"></script>
 
     <script type="text/javascript" src="../js/main.js"></script>
+    <script src="../js/universal-content-loader.js"></script>
     <!-- /Javascript -->
   </body>
 </html>

@@ -409,8 +409,8 @@
                     </svg>
                   </div>
                   <div class="item-content">
-                    <p class="title text-uppercase caption-1">Call Us 24/7</p>
-                    <p class="description">+966 011 2068132</p>
+                    <p class="title text-uppercase caption-1" data-content="callUsLabel">Call Us 24/7</p>
+                    <p class="description" data-content="phone">+966 011 2068132</p>
                   </div>
                 </div>
                 <div class="social-item">
@@ -418,8 +418,8 @@
                     <i class="icon-mail"></i>
                   </div>
                   <div class="item-content">
-                    <p class="title text-uppercase caption-1">send mail us</p>
-                    <p class="description">info@tmz-c.com</p>
+                    <p class="title text-uppercase caption-1" data-content="sendMailLabel">send mail us</p>
+                    <p class="description" data-content="email">info@tmz-c.com</p>
                   </div>
                 </div>
                 <div class="social-item">
@@ -427,10 +427,10 @@
                     <i class="icon-map-pin"></i>
                   </div>
                   <div class="item-content">
-                    <p class="title text-uppercase caption-1">
+                    <p class="title text-uppercase caption-1" data-content="addressLine1">
                       Abi Jafar Al Mansur, Al Yarmuk
                     </p>
-                    <p class="description">Riyadh, Kingdom of Saudi Arabia</p>
+                    <p class="description" data-content="addressLine2">Riyadh, Kingdom of Saudi Arabia</p>
                   </div>
                 </div>
               </div>
@@ -769,9 +769,9 @@
         <div class="page-title-inner">
           <div class="left">
             <div class="page-content">
-              <div class="subtext text-uppercase">Full project management</div>
-              <h2 class="title">Our Services</h2>
-              <div class="text">
+              <div class="subtext text-uppercase" data-content="pageSubtitle">Full project management</div>
+              <h2 class="title" data-content="pageTitle">Our Services</h2>
+              <div class="text" data-content="description">
                 We are one of the most-esteemed buildings construction company.
                 We have earned this respect
                 <br />through the quality and long-lasting structures that we
@@ -808,10 +808,10 @@
         <section class="section-1 p-our-services tf-spacing-34">
           <div class="tf-container">
             <div class="heading-section text-center mb-62">
-              <h3 class="title mb-16 tf-animate-2">
+              <h3 class="title mb-16 tf-animate-2" data-content="sectionTitle">
                 We Provide A Variety Of Construction Services
               </h3>
-              <p class="text lsp-0 body-2 fw5 tf-animate-2">
+              <p class="text lsp-0 body-2 fw5 tf-animate-2" data-content="sectionContent">
                 Our partners and experienced staff are experts in the
                 construction process and our focus on the needs of our clients
                 separate us from the competition. Our team is backed by the full
@@ -1433,22 +1433,22 @@
                       <div class="icon">
                         <i class="icon-map-pin2"></i>
                       </div>
-                      <span
-                        >Abi Jafar Al Mansur <br />
-                        Al Yarmuk, Riyadh, Saudi Arabia
+                      <span>
+                        <span data-content="addressLine1">Abi Jafar Al Mansur</span> <br />
+                        <span data-content="addressLine2">Al Yarmuk, Riyadh, Saudi Arabia</span>
                       </span>
                     </div>
                     <div class="item">
                       <div class="icon">
                         <i class="icon-call"></i>
                       </div>
-                      <span>Call Us: <a href="#">+966 011 2068132</a></span>
+                      <span>Call Us: <a href="#" data-content="phone">+966 011 2068132</a></span>
                     </div>
                     <div class="item">
                       <div class="icon">
                         <i class="icon-mail"></i>
                       </div>
-                      <span>Mail: <a href="#">info@tmz-c.com</a></span>
+                      <span>Mail: <a href="#" data-content="email">info@tmz-c.com</a></span>
                     </div>
                   </div>
                   <!-- <div class="right subscribe footer-list">
@@ -1728,12 +1728,11 @@
               <div class="title text-uppercase body-3 fw6">contact us</div>
               <ul class="contact-megamenu">
                 <li class="item">
-                  Abi Jafar Al Mansur, Al Yarmuk, Riyadh, Kingdom of Saudi
-                  Arabia
+                  <span data-content="addressLine1">Abi Jafar Al Mansur, Al Yarmuk</span>, <span data-content="addressLine2">Riyadh, Kingdom of Saudi Arabia</span>
                 </li>
-                <li class="item">+966 011 2068132</li>
-                <li class="item">info@tmz-c.com</li>
-                <li class="item">8.00 Am - 17.00 Pm</li>
+                <li class="item"><span data-content="phone">+966 011 2068132</span></li>
+                <li class="item"><span data-content="email">info@tmz-c.com</span></li>
+                <li class="item"><span data-content="workingHours">8.00 Am - 17.00 Pm</span></li>
               </ul>
               <div class="post-social none-border">
                 <ul>
@@ -1830,6 +1829,7 @@
     <script src="../js/simpleParallaxVanilla.js"></script>
 
     <script type="text/javascript" src="../js/main.js"></script>
+    <script src="../js/universal-content-loader.js"></script>
     <!-- /Javascript -->
   </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Update Our Mission</title>
+    <title>Admin - Content Management System</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <style>
@@ -26,7 +26,19 @@
         }
         .admin-header h1 {
             color: #333;
-            margin: 0;
+            margin: 0 0 20px 0;
+        }
+        .page-selector {
+            margin-bottom: 30px;
+        }
+        .page-selector select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #f8f9fa;
         }
         .form-group {
             margin-bottom: 25px;
@@ -44,6 +56,7 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 14px;
+            box-sizing: border-box;
         }
         .form-group textarea {
             min-height: 100px;
@@ -93,7 +106,7 @@
             font-weight: 600;
             margin-bottom: 20px;
         }
-        .benefit-item {
+        .benefit-item, .list-item {
             margin-bottom: 15px;
         }
         .back-link {
@@ -105,6 +118,14 @@
         .back-link:hover {
             text-decoration: underline;
         }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        #formContainer {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -112,86 +133,43 @@
         <a href="/" class="back-link">← Back to Website</a>
         
         <div class="admin-header">
-            <h1>Admin Panel - Update Our Mission Content</h1>
+            <h1>Content Management System</h1>
+            <div class="page-selector">
+                <label for="pageSelect"><strong>Select Page to Edit:</strong></label>
+                <select id="pageSelect">
+                    <option value="">-- Select a Page --</option>
+                    <option value="our-mission">Our Mission</option>
+                    <option value="our-vision">Our Vision</option>
+                    <option value="our-goal">Our Goal</option>
+                    <option value="overview">Overview</option>
+                    <option value="civil-work">Civil Work</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="manpower-supply">Manpower Supply</option>
+                    <option value="material-supply">Material Supply</option>
+                    <option value="porta-cabin-supply">Porta Cabin Supply</option>
+                    <option value="our-services">Our Services</option>
+                    <option value="mobile-cranes">Mobile Cranes</option>
+                    <option value="heavy-equipment">Heavy Equipment</option>
+                    <option value="light-equipment">Light Equipment</option>
+                    <option value="earth-moving-equipment">Earth Moving Equipment</option>
+                    <option value="industrial-equipment">Industrial Equipment</option>
+                    <option value="heavy-&-light-vehicles">Heavy and Light Vehicles</option>
+                    <option value="company-profile">Company Profile</option>
+                    <option value="site-info">Contact Information</option>
+                    <option value="index">Home Page</option>
+                    <option value="contact-us">Contact Us</option>
+                </select>
+            </div>
         </div>
 
         <div id="alertContainer"></div>
-
-        <form id="missionForm">
-            <!-- Page Title Section -->
-            <div class="section-title">Page Title Section</div>
-            
-            <div class="form-group">
-                <label for="pageSubtitle">Page Subtitle</label>
-                <input type="text" id="pageSubtitle" name="pageSubtitle" placeholder="e.g., Focused on service excellence">
-            </div>
-
-            <div class="form-group">
-                <label for="pageTitle">Page Title</label>
-                <input type="text" id="pageTitle" name="pageTitle" value="Our Mission" readonly>
-            </div>
-
-            <div class="form-group">
-                <label for="missionStatement">Mission Statement (Main Text)</label>
-                <textarea id="missionStatement" name="missionStatement" rows="4" placeholder="Enter the main mission statement"></textarea>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- How We Deliver Section -->
-            <div class="section-title">How We Deliver Section</div>
-
-            <div class="form-group">
-                <label for="howWeDeliverTitle">Section Title</label>
-                <input type="text" id="howWeDeliverTitle" name="howWeDeliverTitle" placeholder="e.g., How We Deliver">
-            </div>
-
-            <div class="form-group">
-                <label for="howWeDeliverPara1">First Paragraph</label>
-                <textarea id="howWeDeliverPara1" name="howWeDeliverPara1" rows="4" placeholder="Enter first paragraph"></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="howWeDeliverPara2">Second Paragraph</label>
-                <textarea id="howWeDeliverPara2" name="howWeDeliverPara2" rows="4" placeholder="Enter second paragraph"></textarea>
-            </div>
-
-            <div class="form-group">
-                <label>Benefit Items</label>
-                <div class="benefit-item">
-                    <input type="text" id="benefit1" name="benefit1" placeholder="Benefit 1">
-                </div>
-                <div class="benefit-item">
-                    <input type="text" id="benefit2" name="benefit2" placeholder="Benefit 2">
-                </div>
-                <div class="benefit-item">
-                    <input type="text" id="benefit3" name="benefit3" placeholder="Benefit 3">
-                </div>
-            </div>
-
-            <div class="section-divider"></div>
-
-            <!-- Chairman's Message Section -->
-            <div class="section-title">Chairman's Message</div>
-
-            <div class="form-group">
-                <label for="chairmanMessage">Chairman's Message Text</label>
-                <textarea id="chairmanMessage" name="chairmanMessage" rows="6" placeholder="Enter chairman's message"></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="chairmanMessageLabel">Message Label</label>
-                <input type="text" id="chairmanMessageLabel" name="chairmanMessageLabel" placeholder="e.g., Chairman's Message">
-            </div>
-
-            <div style="margin-top: 30px;">
-                <button type="submit" class="btn-save" id="saveBtn">Save Changes</button>
-            </div>
-        </form>
+        <div id="loadingContainer" class="loading">Loading page content...</div>
+        <div id="formContainer">
+            <form id="contentForm"></form>
+        </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/admin-content.js"></script>
 </body>
 </html>
-

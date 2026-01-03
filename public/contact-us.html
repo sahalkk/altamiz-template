@@ -744,9 +744,9 @@
         <div class="page-title-inner">
           <div class="left">
             <div class="page-content">
-              <div class="subtext text-uppercase">We support you 24/7</div>
-              <h2 class="title">Contact Us</h2>
-              <div class="text">
+              <div class="subtext text-uppercase" data-content="pageSubtitle">We support you 24/7</div>
+              <h2 class="title" data-content="pageTitle">Contact Us</h2>
+              <div class="text" data-content="description">
                 At Al Tameez Engineering & Construction, we're committed to
                 delivering
                 <br />excellence in every project. Contact us today to discuss
@@ -797,13 +797,14 @@
                   <div class="heading-section mb-56">
                     <span
                       class="sub-title text-uppercase fw5 mb-12 tf-animate-2"
+                      data-content="getInTouchSubtitle"
                     >
                       let's work together
                     </span>
-                    <h3 class="title mb-12 tf-animate-2">
+                    <h3 class="title mb-12 tf-animate-2" data-content="getInTouchTitle">
                       Get In Touch With Us
                     </h3>
-                    <div class="text lsp-0 tf-animate-2">
+                    <div class="text lsp-0 tf-animate-2" data-content="getInTouchDescription">
                       If you need to repair or replace your Plumbing system,
                       call today
                       <br />and talk to one of our Plumbing specialists.
@@ -811,11 +812,11 @@
                   </div>
 
                   <div class="contact-item mb-35">
-                    <div class="sub-title tf-animate-2">
+                    <div class="sub-title tf-animate-2" data-content="callUsLabel">
                       Call support center 24/7
                     </div>
                     <h4 class="title tf-animate-2">
-                      <a href="#" class="number-phone">+966 011 2068132</a>
+                      <a href="#" class="number-phone" data-content="phone">+966 011 2068132</a>
                     </h4>
                   </div>
 
@@ -823,21 +824,22 @@
                     class="flex justify-content-between align-items-center gap-56 flex-wrap"
                   >
                     <div class="contact-item">
-                      <div class="sub-title tf-animate-2">
+                      <div class="sub-title tf-animate-2" data-content="addressLine1">
                         Abi Jafar Al Mansur
                       </div>
-                      <a href="#" class="title body-3 fw5 tf-animate-2"
+                      <a href="#" class="title body-3 fw5 tf-animate-2" data-content="addressLine2"
                         >Al Yarmuk, Riyadh, Saudi Arabia</a
                       >
                     </div>
                     <div class="contact-item">
-                      <div class="sub-title tf-animate-2" data-delay=".1s">
+                      <div class="sub-title tf-animate-2" data-delay=".1s" data-content="sendMailLabel">
                         Write to us
                       </div>
                       <a
                         href="#"
                         class="title body-3 fw5 tf-animate-2"
                         data-delay=".1s"
+                        data-content="email"
                         >info@tmz-c.com</a
                       >
                     </div>
@@ -951,8 +953,8 @@
         <section class="section-location tf-spacing-27">
           <div class="tf-container">
             <div class="heading-section text-center mb-62">
-              <h3 class="title mb-12 tf-animate-2">Our Locations</h3>
-              <div class="text lsp-0 tf-animate-2">
+              <h3 class="title mb-12 tf-animate-2" data-content="locationsTitle">Our Locations</h3>
+              <div class="text lsp-0 tf-animate-2" data-content="locationsDescription">
                 With a presence in three countries. We has the most
                 comprehensive local office network in the industry.
               </div>
@@ -1005,16 +1007,16 @@
                       </div>
                       <ul>
                         <li>
-                          <span>Address: </span> Abi Jafar Al Mansur, Al Yarmuk
+                          <span>Address: </span> <span data-content="addressLine1">Abi Jafar Al Mansur</span>, <span data-content="addressLine2">Al Yarmuk</span>
                         </li>
                         <li>
                           <span>Call Us: </span
-                          ><a href="#"> +966 011 2068132</a>
+                          ><a href="#" data-content="phone"> +966 011 2068132</a>
                         </li>
                         <li>
-                          <span>Mail: </span><a href="#">info@tmz-c.com</a>
+                          <span>Mail: </span><a href="#" data-content="email">info@tmz-c.com</a>
                         </li>
-                        <li><span>Open Hour: </span> 8.00 - 17.00</li>
+                        <li><span>Open Hour: </span> <span data-content="workingHours">8.00 - 17.00</span></li>
                       </ul>
                       <div class="bottom-btn">
                         <a
@@ -1249,22 +1251,22 @@
                       <div class="icon">
                         <i class="icon-map-pin2"></i>
                       </div>
-                      <span
-                        >Abi Jafar Al Mansur <br />
-                        Al Yarmuk, Riyadh, Saudi Arabia
+                      <span>
+                        <span data-content="addressLine1">Abi Jafar Al Mansur</span> <br />
+                        <span data-content="addressLine2">Al Yarmuk, Riyadh, Saudi Arabia</span>
                       </span>
                     </div>
                     <div class="item">
                       <div class="icon">
                         <i class="icon-call"></i>
                       </div>
-                      <span>Call Us: <a href="#">+966 011 2068132</a></span>
+                      <span>Call Us: <a href="#" data-content="phone">+966 011 2068132</a></span>
                     </div>
                     <div class="item">
                       <div class="icon">
                         <i class="icon-mail"></i>
                       </div>
-                      <span>Mail: <a href="#">info@tmz-c.com</a></span>
+                      <span>Mail: <a href="#" data-content="email">info@tmz-c.com</a></span>
                     </div>
                   </div>
                   <!-- <div class="right subscribe footer-list">
@@ -1542,12 +1544,11 @@
               <div class="title text-uppercase body-3 fw6">contact us</div>
               <ul class="contact-megamenu">
                 <li class="item">
-                  Abi Jafar Al Mansur, Al Yarmuk, Riyadh, Kingdom of Saudi
-                  Arabia
+                  <span data-content="addressLine1">Abi Jafar Al Mansur, Al Yarmuk</span>, <span data-content="addressLine2">Riyadh, Kingdom of Saudi Arabia</span>
                 </li>
-                <li class="item">+966 011 2068132</li>
-                <li class="item">info@tmz-c.com</li>
-                <li class="item">8.00 Am - 17.00 Pm</li>
+                <li class="item"><span data-content="phone">+966 011 2068132</span></li>
+                <li class="item"><span data-content="email">info@tmz-c.com</span></li>
+                <li class="item"><span data-content="workingHours">8.00 Am - 17.00 Pm</span></li>
               </ul>
               <div class="post-social none-border">
                 <ul>
@@ -1647,6 +1648,7 @@
     <script src="js/jquery-validate.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/universal-content-loader.js"></script>
     <!-- /Javascript -->
   </body>
 </html>
