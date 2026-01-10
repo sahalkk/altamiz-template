@@ -6555,7 +6555,7 @@ tf-swiper .sw-pagination .swiper-pagination-bullet.swiper-pagination-bullet-acti
 }
 
 .tf-swiper .swiper-slide {
-  height: auto !important;
+  height: 451px !important;
 }
 .tf-swiper .swiper-slide > div {
   height: 100%;
@@ -20349,27 +20349,27 @@ a.mapboxgl-ctrl-logo {
 .section-details-services .img-list {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 .section-details-services .img-list .swiper {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .section-details-services .img-list .swiper-slide {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 .section-details-services .img-list .image-blog {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   overflow: hidden;
   position: relative;
 }
 .section-details-services .img-list .image-blog img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
   object-position: center center;
 }
@@ -20393,7 +20393,7 @@ a.mapboxgl-ctrl-logo {
 }
 @media (max-width: 767px) {
   .section-details-services .img-list {
-    height: 400px;
+    height: auto;
   }
 }
 .section-details-services .benefit-row .list-benefit {
