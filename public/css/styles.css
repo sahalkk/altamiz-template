@@ -6555,8 +6555,9 @@ tf-swiper .sw-pagination .swiper-pagination-bullet.swiper-pagination-bullet-acti
 }
 
 .tf-swiper .swiper-slide {
-  height: 451px !important;
+  height: auto !important;
 }
+
 .tf-swiper .swiper-slide > div {
   height: 100%;
 }
@@ -20349,7 +20350,8 @@ a.mapboxgl-ctrl-logo {
 .section-details-services .img-list {
   position: relative;
   width: 100%;
-  height: auto;
+  height: auto !important;
+  max-height: none !important;
 }
 .section-details-services .img-list .swiper {
   width: 100%;

@@ -1860,6 +1860,22 @@
 
     <script type="text/javascript" src="../js/main.js"></script>
     <script src="../js/universal-content-loader.js"></script>
+    <script>
+      // Remove inline height set by Swiper for services section
+      document.addEventListener('DOMContentLoaded', function() {
+        const imgListSwiper = document.querySelector('.section-details-services .img-list');
+        if (imgListSwiper) {
+          // Wait for Swiper to initialize
+          setTimeout(function() {
+            imgListSwiper.style.height = 'auto';
+            const swiper = imgListSwiper.swiper;
+            if (swiper) {
+              swiper.update();
+            }
+          }, 100);
+        }
+      });
+    </script>
     <!-- /Javascript -->
   </body>
 </html>
