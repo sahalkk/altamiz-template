@@ -10,7 +10,7 @@
  */
 
 // Configuration
-$receiving_email = "msahalkk357@gmail.com"; // CHANGE THIS to your receiving email
+$receiving_email = "info@tmz-c.com"; // CHANGE THIS to your receiving email
 
 // Check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
