@@ -34,23 +34,24 @@ try {
     $mail->addReplyTo($email, $name);
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Contact Form Submission';
+    $mail->Subject = $name . " - TMZ Website Enquiry";
     $mail->Body = "
-        <h3>New Contact Message</h3>
+        <h2>Contact Form Enquiry</h2>
         <p><strong>Name:</strong> {$name}</p>
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Phone:</strong> {$phone}</p>
-        <p><strong>Subject:</strong> {$subject}</p>
+        <p><strong>Category:</strong> {$subject}</p>
         <p><strong>Message:</strong><br>" . nl2br($message) . "</p>
     ";
-    $mail->SMTPDebug = 2;
     $mail->send();
-    echo json_encode(["success" => true, "message" => "Message sent"]);
+    echo json_encode(["success" => true, "message" => "Message sent successfully"]);
+    exit;
 
 } catch (Exception $e) {
     echo json_encode([
         "success" => false,
-        "error" => $mail->ErrorInfo
+        "message" => "Failed to send message: " . $mail->ErrorInfo
     ]);
+    exit;
 }    
  
